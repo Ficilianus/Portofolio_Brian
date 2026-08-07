@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;background-color:#1a0b2e;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}.crt-overlay{position:fixed;top:0;left:0;width:100vw;height:100vh;background:linear-gradient(rgba(18,16,16,0) 50%,rgba(0,0,0,0.1) 50%),linear-gradient(90deg,rgba(255,0,0,0.03),rgba(0,255,0,0.01),rgba(0,0,255,0.03));z-index:9999;background-size:100% 4px,3px 100%;pointer-events:none;}.marquee-btn{transition:transform 0.1s;border-bottom:4px solid #8a005f;}.marquee-btn:active{transform:translateY(2px);border-bottom-width:0;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed-dim":"#ffafd5","secondary":"#46f3f3","primary":"#ffafd5","on-primary":"#620042","on-error":"#690005","tertiary-container":"#bf8600","surface-container-lowest":"#150629","outline-variant":"#59404b","on-error-container":"#ffdad6","on-tertiary-fixed-variant":"#5f4100","tertiary-fixed":"#ffdeac","surface-container":"#27183b","on-tertiary":"#432c00","inverse-primary":"#b4007d","on-secondary-container":"#005858","error-container":"#93000a","error":"#ffb4ab","on-background":"#eddcff","surface-container-highest":"#3d2e52","inverse-surface":"#eddcff","surface-dim":"#1a0b2e","tertiary-fixed-dim":"#ffba35","surface-bright":"#413257","tertiary":"#ffba35","primary-container":"#ff3eb7","on-secondary":"#003737","background":"#1a0b2e","secondary-fixed":"#4ff9f9","primary-fixed":"#ffd8e8","inverse-on-surface":"#38294d","surface-variant":"#3d2e52","secondary-container":"#00d6d7","on-secondary-fixed":"#002020","on-primary-fixed":"#3d0027","outline":"#a78895","surface-container-low":"#231437","on-primary-fixed-variant":"#8a005f","on-primary-container":"#56003a","on-tertiary-fixed":"#281900","surface-container-high":"#322346","surface":"#1a0b2e","on-tertiary-container":"#3a2600","on-surface-variant":"#e0bdcb","surface-tint":"#ffafd5","on-surface":"#eddcff","secondary-fixed-dim":"#15dcdc","on-secondary-fixed-variant":"#004f50"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-mobile":"16px","gutter":"24px","container-max":"1200px","margin-desktop":"64px","unit":"4px"},"fontFamily":{"headline-sm":["spaceGrotesk"],"headline-md":["spaceGrotesk"],"body-md":["jetbrainsMono"],"headline-lg-mobile":["spaceGrotesk"],"body-lg":["jetbrainsMono"],"headline-lg":["spaceGrotesk"],"label-md":["courierPrime"]},"fontSize":{"headline-sm":["24px",{"lineHeight":"1.2","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"1.2","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-lg-mobile":["32px",{"lineHeight":"1.1","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"1.6","fontWeight":"400"}],"headline-lg":["48px",{"lineHeight":"1.1","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["14px",{"lineHeight":"1.4","fontWeight":"700"}]}}}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=courierPrime:wght@100..900&amp;family=jetbrainsMono:wght@100..900&amp;family=spaceGrotesk:wght@100..900&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><div class="crt-overlay"></div><header class="fixed top-0 w-full z-50 bg-surface-container/90 backdrop-blur-md border-b-4 border-surface-container-highest"><div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-unit"><span class="material-symbols-outlined text-secondary text-[32px] animate-pulse">joystick</span><span class="font-headline-md text-headline-md tracking-tighter text-primary italic uppercase">Retro.Arcade</span></div><nav class="hidden xl:flex items-center gap-4" data-active-classes="bg-primary text-on-primary border-on-primary-fixed-variant"><a aria-current="page" class="marquee-btn px-4 py-2 font-label-md uppercase transition-all bg-primary text-on-primary border-on-primary-fixed-variant" data-path="home" href="#">Home</a><a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="tech-stack" href="#">Tech Stack</a><a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="experience" href="#">Experience</a><a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="projects" href="#">Projects</a><a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="certificates" href="#">Certificates</a><a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-4"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 min-h-screen"><div class="flex flex-col w-full relative z-0">
+<!-- BACKGROUND SHADER & CITYSCAPE -->
+<!-- STITCH_SHADER_START:ANIMATION_2 class="fixed inset-0 w-full h-full z-[-2] opacity-40 mix-blend-screen pointer-events-none" -->
+<div class="fixed inset-0 w-full h-full z-[-2] opacity-40 mix-blend-screen pointer-events-none" style="display:block;">
+<canvas id="shader-canvas-ANIMATION_2" style="display:block;width:100%;height:100%" width="1280" height="5402"></canvas>
+<script>
+(function() {
+  const canvas = document.getElementById('shader-canvas-ANIMATION_2');
+
+  // Sync the WebGL drawing-buffer size with the CSS-driven layout size.
+  // This fires on initial layout and whenever the element is resized.
+  function syncSize() {
+    const w = canvas.clientWidth  || 1280;
+    const h = canvas.clientHeight || 720;
+    if (canvas.width !== w || canvas.height !== h) {
+      canvas.width  = w;
+      canvas.height = h;
+    }
+  }
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(syncSize).observe(canvas);
+  }
+  syncSize();
+
+  const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+  if (!gl) return;
+  const vs = `attribute vec2 a_position;
+varying vec2 v_texCoord;
+void main() {
+  v_texCoord = a_position * 0.5 + 0.5;
+  gl_Position = vec4(a_position, 0.0, 1.0);
+}`;
+  const fs = `precision highp float;
+uniform float u_time;
+uniform vec2 u_resolution;
+
+varying vec2 v_texCoord;
+
+float hash(vec2 p) {
+    p = fract(p * vec2(123.34, 456.21));
+    p += dot(p, p + 45.32);
+    return fract(p.x * p.y);
+}
+
+void main() {
+    vec2 uv = v_texCoord;
+    vec3 color = vec3(0.102, 0.043, 0.18); // #1a0b2e base
+
+    // Grid / Scanlines
+    float grid = sin(uv.y * 200.0 + u_time * 2.0) * 0.02;
+    color += grid;
+
+    // Stars
+    vec2 starUv = uv * 50.0;
+    vec2 id = floor(starUv);
+    vec2 gv = fract(starUv) - 0.5;
+    float h = hash(id);
+    if (h > 0.98) {
+        float d = length(gv);
+        float star = smoothstep(0.1, 0.01, d) * (sin(u_time * 2.0 + h * 10.0) * 0.5 + 0.5);
+        color += star * vec3(1.0, 0.9, 0.6);
+    }
+
+    // Synthwave Sun/Glow at horizon
+    float horizon = 0.4;
+    float glow = exp(-abs(uv.y - horizon) * 5.0) * 0.15;
+    color += glow * vec3(1.0, 0.18, 0.71); // Magenta glow
+
+    gl_FragColor = vec4(color, 1.0);
+}`;
+  function cs(type, src) {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, src);
+    gl.compileShader(s);
+    return s;
+  }
+  const prog = gl.createProgram();
+  gl.attachShader(prog, cs(gl.VERTEX_SHADER, vs));
+  gl.attachShader(prog, cs(gl.FRAGMENT_SHADER, fs));
+  gl.linkProgram(prog);
+  gl.useProgram(prog);
+  const buf = gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 1,-1, -1,1, 1,1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a_position');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const uTime = gl.getUniformLocation(prog, 'u_time');
+  const uRes = gl.getUniformLocation(prog, 'u_resolution');
+  const uMouse = gl.getUniformLocation(prog, 'u_mouse');
+
+  // u_mouse is in pixel coordinates matching u_resolution (ShaderToy convention).
+  // Shaders that need normalized coords should use: u_mouse / u_resolution.
+  let mouse = { x: canvas.width / 2, y: canvas.height / 2 };
+  window.addEventListener('mousemove', (event) => {
+    const rect = canvas.getBoundingClientRect();
+    if (rect.width && rect.height) {
+      const nx = (event.clientX - rect.left) / rect.width;
+      const ny = 1.0 - (event.clientY - rect.top) / rect.height;
+      mouse.x = nx * canvas.width;
+      mouse.y = ny * canvas.height;
+    }
+  });
+
+  function render(t) {
+    if (typeof ResizeObserver === 'undefined') syncSize();
+    gl.viewport(0, 0, canvas.width, canvas.height);
+    if (uTime) gl.uniform1f(uTime, t * 0.001);
+    if (uRes) gl.uniform2f(uRes, canvas.width, canvas.height);
+    if (uMouse) gl.uniform2f(uMouse, mouse.x, mouse.y);
+    gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
+    requestAnimationFrame(render);
+  }
+  render(0);
+})();
+</script>
+</div>
+<!-- STITCH_SHADER_END:ANIMATION_2 -->
+<div 0="" 100\"="" 200="" 200\"="" class="fixed bottom-0 left-0 w-full h-64 z-[-1] pointer-events-none opacity-30 bg-repeat-x flex items-end" height="\&quot;100\&quot;" style="background-image: url('data:image/svg+xml;utf8,&lt;svg width=\" viewbox="\&quot;0" xmlns="\&quot;http://www.w3.org/2000/svg\&quot;"><path 100v50h20v-20h20v-10h10v30h30v-40h20v40h30v-20h20v10h10v-30h20v30h20v60h0z\"="" d="\&quot;M0" fill="\&quot;%23ffafd5\&quot;/">'); background-size: 200px 100px;"&gt;</path></div>
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[80vh] flex flex-col items-center justify-center px-margin-mobile lg:px-margin-desktop py-24 text-center">
+<!-- Oversized Logo Emblem (Since Nav is out of bounds) -->
+<div class="absolute inset-0 flex items-center justify-center opacity-10 blur-md z-[-1] pointer-events-none">
+<img alt="Arcade Portfolio Logo" class="w-[60vw] h-[60vw] object-cover mix-blend-screen rounded-full animate-pulse" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T61dCvMAOLdd9gD_43RILFFy2iKB0BpTj1imw-qiZs4vjUF00KJnghi0ZUn07pQbW2qAulVLqvLqG4ZwQRK4N5KoeUiG9TMBYHjMf98dRYnMzyU_8jtOaKeCarg4FoXU1AqZm4geteqYSMpOgT0gUWTZu6qxf-1OOBDN231Qo_bt2VrTJda409nFY7yqHQxRdoHdCgQ-RwjLPXD4dnhv_XeP5lHowuKULf-FFm6ooDnGI1pkVsoZ">
+</div>
+<div class="relative z-10 flex flex-col items-center gap-8 max-w-4xl mx-auto">
+<div class="bg-primary/20 p-2 rounded-full mb-4 shadow-[0_0_20px_theme(colors.primary)]">
+<img alt="Profile Emblem" class="w-24 h-24 rounded-full border-2 border-primary object-cover mix-blend-screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8T61dCvMAOLdd9gD_43RILFFy2iKB0BpTj1imw-qiZs4vjUF00KJnghi0ZUn07pQbW2qAulVLqvLqG4ZwQRK4N5KoeUiG9TMBYHjMf98dRYnMzyU_8jtOaKeCarg4FoXU1AqZm4geteqYSMpOgT0gUWTZu6qxf-1OOBDN231Qo_bt2VrTJda409nFY7yqHQxRdoHdCgQ-RwjLPXD4dnhv_XeP5lHowuKULf-FFm6ooDnGI1pkVsoZ">
+</div>
+<h1 class="font-headline-lg text-headline-lg text-secondary tracking-tighter uppercase [text-shadow:0_0_20px_theme(colors.secondary)] animate-pulse">
+        Player One
+      </h1>
+<div class="flex items-center gap-4 bg-surface-container-high/80 backdrop-blur-md px-6 py-3 rounded-full shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)]">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-widest">
+          Machine Learning Engineer | Computer Vision | Game &amp; Robotics
+        </p>
+</div>
+<button class="marquee-btn mt-8 px-12 py-6 bg-primary text-on-primary font-headline-sm text-headline-sm uppercase tracking-widest shadow-[0_0_30px_theme(colors.primary)] border-b-[6px] border-on-primary-fixed-variant hover:bg-primary-fixed transition-all active:translate-y-2 active:border-b-0 group">
+<span class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl group-hover:animate-spin">sports_esports</span>
+          Insert Coin
+        </span>
+</button>
+</div>
+</section>
+<!-- TECH STACK -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto" id="tech-stack">
+<div class="flex items-center gap-4 mb-16">
+<span class="material-symbols-outlined text-primary text-5xl">memory</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Tech Inventory</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card -->
+<div class="bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-2xl">smart_toy</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase">Machine Learning</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">PyTorch, TensorFlow, Scikit-learn, LLMs, NLP, Transformers.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-background text-primary font-label-md text-label-md shadow-[0_0_0_1px_theme(colors.primary)] animate-pulse">LVL 99</span>
+<span class="px-2 py-1 bg-background text-secondary font-label-md text-label-md shadow-[0_0_0_1px_theme(colors.secondary)]">EXP MAX</span>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-2xl">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase">Computer Vision</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">OpenCV, YOLO, Segmentation, Object Detection, NeRF.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-background text-primary font-label-md text-label-md shadow-[0_0_0_1px_theme(colors.primary)] animate-pulse">LVL 85</span>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase">Robotics</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">ROS2, SLAM, Kinematics, Control Systems, Sensor Fusion.</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-2 py-1 bg-background text-tertiary font-label-md text-label-md shadow-[0_0_0_1px_theme(colors.tertiary)] animate-pulse">LVL 70</span>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto" id="projects">
+<div class="flex items-center justify-between mb-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-5xl">stadia_controller</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Arcade Cabinets</h2>
+</div>
+<span class="font-label-md text-label-md text-primary animate-pulse">SELECT GAME _</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Cabinet 1 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden">
+<div class="w-full bg-secondary text-on-secondary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.secondary)] z-10">
+          Vision-Bot 2000
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-8 shadow-[inset_0_0_15px_theme(colors.secondary)] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="A pixel-art rendering of a robot arm assembling a circuit board, glowing cyan wires, dark synthwave background." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-0knymRnNYZF4WZj3Xj5bAM6K1IGj11JwDa1RXiJue6Vv-Q8ex6jjboSFGBnPcBwHilFFu4gXWy3xWsvjF1NLWy5m6JPfY6u38hqtmYkz7LaxvBLXGNlXO_Pp-SXWXxc9TqFUFnX2dPRXiTd5RWuQTvlnoJ_XVZUWlgvHyyveZu0K1QtYNWDVBVLvRnhczJPgV_KJRayYySFzcDD7d2omZAyde9L0xoVefXi5XY69OAPXbAUpQjpR')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<button class="w-32 h-12 bg-error text-on-error font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-error-container)] group-hover:translate-y-1 group-hover:shadow-[0_2px_0_theme(colors.on-error-container)] transition-all">
+          PLAY
+        </button>
+</div>
+<!-- Cabinet 2 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden">
+<div class="w-full bg-primary text-on-primary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.primary)] z-10">
+          Neural Racer
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-8 shadow-[inset_0_0_15px_theme(colors.primary)] overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="A futuristic vaporwave racing game scene, magenta grid floor, neon sunset, low poly car." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAYiuAu6z7Pd_J2x3f_Ne_OK-8JSBmpOHdaS28HO5ODGAus1dvdcSSvoOn5MJPp8TrmJaGS_6V4K5qxzXLfKrvfvFyBjiDzES08exmRjw5OhWAcQTFamd_qzEIoUQYKPOTLNzg7-_sj7ucnNRK85tz0yNgZ-ytAKlqfgqeKe0FKIuwp25MBfkSzHAxw0bG05FGvcb5tqPY4m8Y50RD3gBvnkPtgmGYoDqSTrRr2ygzBxR7ROm88aj4y')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<button class="w-32 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] group-hover:translate-y-1 group-hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all">
+          PLAY
+        </button>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest border-t-8 border-surface-container-highest pt-12 pb-8 relative overflow-hidden"><div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop"><div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12"><div class="flex items-end gap-6"><div class="relative w-24 h-24 bg-surface-container rounded-full border-4 border-outline shadow-[0_0_20px_rgba(70,243,243,0.3)]"><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-16 bg-surface-container-highest rounded-full rotate-45"></div><div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-error rounded-full border-2 border-on-error shadow-[0_4px_0_#690005]"></div></div><div class="flex gap-4"><div class="w-12 h-12 rounded-full bg-primary-container border-2 border-on-primary-container shadow-[0_4px_0_#56003a]"></div><div class="w-12 h-12 rounded-full bg-secondary-container border-2 border-on-secondary-container shadow-[0_4px_0_#005858]"></div><div class="w-12 h-12 rounded-full bg-tertiary-container border-2 border-on-tertiary-container shadow-[0_4px_0_#3a2600]"></div></div></div><div class="text-right"><div class="font-headline-sm text-headline-sm text-primary mb-2">INSERT COIN TO START</div><div class="font-label-md text-label-md text-on-surface-variant">PLAYER 1: CONNECTED</div></div></div><div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-label-md text-on-surface-variant"><span>© 198X-2024 PORTFOLIO OS V2.1</span><div class="flex gap-6"><span class="flex items-center gap-1"><span class="w-2 h-2 bg-secondary rounded-full"></span>SYSTEM STABLE</span><span class="flex items-center gap-1"><span class="w-2 h-2 bg-primary animate-ping rounded-full"></span>TRANSMITTING</span></div></div></div><div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-tertiary"></div></footer></body></html>

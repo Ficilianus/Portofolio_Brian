@@ -1,0 +1,561 @@
+<!DOCTYPE html><html lang="en" style=""><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<style>
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a0b2e;
+  }
+  body {
+    overscroll-behavior: none;
+  }
+  main > :first-child {
+    margin-top: 0 !important;
+  }
+  main > :last-child {
+    margin-bottom: 0 !important;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.crt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 9999;
+  background-size: 100% 4px, 3px 100%;
+  pointer-events: none;
+}
+.marquee-btn {
+  transition: transform 0.1s;
+  border-bottom: 4px solid #8a005f;
+}
+.marquee-btn:active {
+  transform: translateY(2px);
+  border-bottom-width: 0;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.neon-text-primary {
+  text-shadow: 0 0 10px theme('colors.primary'), 0 0 20px theme('colors.primary'), 0 0 40px theme('colors.primary');
+}
+.neon-text-secondary {
+  text-shadow: 0 0 10px theme('colors.secondary'), 0 0 20px theme('colors.secondary'), 0 0 40px theme('colors.secondary');
+}
+.neon-border-primary {
+  box-shadow: 0 0 10px theme('colors.primary'), inset 0 0 10px theme('colors.primary');
+}
+.neon-border-secondary {
+  box-shadow: 0 0 10px theme('colors.secondary'), inset 0 0 10px theme('colors.secondary');
+}
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-tertiary-fixed": "#281900",
+                "on-tertiary-fixed-variant": "#5f4100",
+                "inverse-surface": "#eddcff",
+                "tertiary-container": "#bf8600",
+                "outline": "#a78895",
+                "surface": "#1a0b2e",
+                "on-secondary-fixed": "#002020",
+                "primary": "#ffafd5",
+                "secondary-fixed": "#4ff9f9",
+                "surface-container-high": "#322346",
+                "on-tertiary": "#432c00",
+                "on-background": "#eddcff",
+                "tertiary-fixed-dim": "#ffba35",
+                "on-secondary-container": "#005858",
+                "secondary-fixed-dim": "#15dcdc",
+                "secondary": "#46f3f3",
+                "on-tertiary-container": "#3a2600",
+                "on-primary-container": "#56003a",
+                "on-surface-variant": "#e0bdcb",
+                "error": "#ffb4ab",
+                "on-error": "#690005",
+                "secondary-container": "#00d6d7",
+                "surface-container-low": "#231437",
+                "primary-container": "#ff3eb7",
+                "surface-container-lowest": "#150629",
+                "on-primary-fixed-variant": "#8a005f",
+                "surface-tint": "#ffafd5",
+                "on-primary-fixed": "#3d0027",
+                "surface-container": "#27183b",
+                "surface-bright": "#413257",
+                "on-primary": "#620042",
+                "surface-dim": "#1a0b2e",
+                "on-surface": "#eddcff",
+                "primary-fixed-dim": "#ffafd5",
+                "tertiary": "#ffba35",
+                "background": "#1a0b2e",
+                "on-secondary": "#003737",
+                "inverse-on-surface": "#38294d",
+                "surface-variant": "#3d2e52",
+                "primary-fixed": "#ffd8e8",
+                "outline-variant": "#59404b",
+                "error-container": "#93000a",
+                "on-error-container": "#ffdad6",
+                "tertiary-fixed": "#ffdeac",
+                "on-secondary-fixed-variant": "#004f50",
+                "surface-container-highest": "#3d2e52",
+                "inverse-primary": "#b4007d"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "container-max": "1200px",
+                "gutter": "24px",
+                "margin-mobile": "16px",
+                "unit": "4px",
+                "margin-desktop": "64px"
+        },
+        "fontFamily": {
+                "headline-lg-mobile": [
+                        "spaceGrotesk"
+                ],
+                "headline-sm": [
+                        "spaceGrotesk"
+                ],
+                "body-md": [
+                        "jetbrainsMono"
+                ],
+                "headline-md": [
+                        "spaceGrotesk"
+                ],
+                "body-lg": [
+                        "jetbrainsMono"
+                ],
+                "headline-lg": [
+                        "spaceGrotesk"
+                ],
+                "label-md": [
+                        "courierPrime"
+                ]
+        },
+        "fontSize": {
+                "headline-lg-mobile": [
+                        "32px",
+                        {
+                                "lineHeight": "1.1",
+                                "fontWeight": "700"
+                        }
+                ],
+                "headline-sm": [
+                        "24px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "600"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "32px",
+                        {
+                                "lineHeight": "1.2",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "1.6",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "1.1",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "label-md": [
+                        "14px",
+                        {
+                                "lineHeight": "1.4",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=courierPrime:wght@100..900&amp;family=jetbrainsMono:wght@100..900&amp;family=spaceGrotesk:wght@100..900&amp;display=swap" rel="stylesheet">
+</head>
+<body class="bg-background font-body-md text-on-surface">
+<div class="crt-overlay"></div>
+<header class="fixed top-0 w-full z-50 bg-surface-container/90 backdrop-blur-md border-b-4 border-surface-container-highest">
+<div class="h-20 max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop flex items-center justify-between">
+<div class="flex items-center gap-unit">
+<span class="material-symbols-outlined text-secondary text-[32px] animate-pulse neon-text-secondary">joystick</span>
+<span class="font-headline-md text-headline-md tracking-tighter text-primary italic uppercase neon-text-primary">Retro.Arcade</span>
+</div>
+<nav class="hidden xl:flex items-center gap-4" data-active-classes="bg-primary text-on-primary border-on-primary-fixed-variant">
+<a aria-current="page" class="marquee-btn px-4 py-2 font-label-md uppercase transition-all bg-primary text-on-primary border-on-primary-fixed-variant" data-path="home" href="#">Home</a>
+<a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="tech-stack" href="#tech-stack">Tech Stack</a>
+<a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="experience" href="#experience">Experience</a>
+<a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="projects" href="#projects">Projects</a>
+<a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="certificates" href="#">Certificates</a>
+<a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all" data-path="contact" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center neon-border-primary">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
+</div>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 min-h-screen">
+<div class="flex flex-col w-full relative z-0">
+<!-- BACKGROUND SHADER & CITYSCAPE -->
+<div class="fixed bottom-0 left-0 w-full h-32 z-[-1] pointer-events-none opacity-20 flex items-end">
+<svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="100" id="cityscape-pattern" patternUnits="userSpaceOnUse" width="200" x="0" y="0">
+<path d="M0 100V50h20v-20h20v-10h10v30h30v-40h20v40h30v-20h20v10h10v-30h20v30h20v60h0z" fill="#ffafd5"></path>
+</pattern>
+</defs>
+<rect fill="url(#cityscape-pattern)" height="100%" width="100%" x="0" y="0"></rect>
+</svg>
+</div>
+<div class="fixed inset-0 w-full h-full z-[-2] pointer-events-none bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-surface-bright/20 via-background to-background"></div>
+<!-- HERO SECTION -->
+<section class="relative w-full min-h-[80vh] flex flex-col items-center justify-center px-margin-mobile lg:px-margin-desktop py-24 text-center">
+<div class="absolute inset-0 flex items-center justify-center opacity-10 blur-md z-[-1] pointer-events-none">
+<img alt="Arcade Portfolio Logo" class="w-[60vw] h-[60vw] object-cover mix-blend-screen rounded-full animate-pulse" src="https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg">
+</div>
+<div class="relative z-10 flex flex-col items-center gap-8 max-w-4xl mx-auto">
+<div class="bg-primary/20 p-2 rounded-full mb-4 shadow-[0_0_20px_theme(colors.primary)] neon-border-primary">
+<img alt="Profile Emblem" class="w-24 h-24 rounded-full border-2 border-primary object-cover mix-blend-screen" src="https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg">
+</div>
+<h1 class="font-headline-lg text-headline-lg text-secondary tracking-tighter uppercase neon-text-secondary animate-pulse">
+        Player One
+      </h1>
+<div class="flex flex-col items-center gap-4 bg-surface-container-high/80 backdrop-blur-md px-6 py-6 rounded-3xl shadow-[0_0_10px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] max-w-3xl border border-secondary/50">
+<div class="flex items-center gap-4 border-b border-outline-variant pb-4 w-full justify-center">
+<span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
+<p class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-center">
+      Machine Learning Engineer | Web Dev | IoT
+    </p>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center mt-2 leading-relaxed">
+    An Informatics graduate from Sanata Dharma University specializing in Machine Learning, with a strong interest in intelligent systems and data-driven development. Experienced in web development using Laravel and building embedded/IoT systems, including a Raspberry Pi-based smart parking prototype. Possesses a solid foundation in software engineering, database management, and hardware–software integration, with a strong motivation to continuously adapt and grow in the tech industry.
+  </p>
+</div>
+<button class="marquee-btn mt-8 px-12 py-6 bg-primary text-on-primary font-headline-sm text-headline-sm uppercase tracking-widest shadow-[0_0_30px_theme(colors.primary)] border-b-[6px] border-on-primary-fixed-variant hover:bg-primary-fixed transition-all active:translate-y-2 active:border-b-0 group neon-border-primary">
+<span class="flex items-center gap-4">
+<span class="material-symbols-outlined text-4xl group-hover:animate-spin">sports_esports</span>
+          Insert Coin
+        </span>
+</button>
+</div>
+</section>
+<!-- TECH STACK -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto relative group" id="tech-stack">
+<div class="flex items-center gap-4 mb-16">
+<span class="material-symbols-outlined text-primary text-5xl neon-text-primary">memory</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Tech Inventory</h2>
+</div>
+<button onclick="document.querySelector('#tech-stack-scroll').scrollBy({left: -300, behavior: 'smooth'})" class="absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-16 h-16 bg-primary text-on-primary rounded-full cursor-pointer hover:bg-primary-fixed transition-all border-2 border-on-primary-fixed-variant shadow-[0_0_15px_theme(colors.primary)] neon-border-primary active:translate-y-1 active:shadow-none" aria-label="Scroll Left">
+  <span class="material-symbols-outlined text-3xl">chevron_left</span>
+</button>
+<button onclick="document.querySelector('#tech-stack-scroll').scrollBy({left: 300, behavior: 'smooth'})" class="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-16 h-16 bg-secondary text-on-secondary rounded-full cursor-pointer hover:bg-secondary-fixed transition-all border-2 border-on-secondary-fixed-variant shadow-[0_0_15px_theme(colors.secondary)] neon-border-secondary active:translate-y-1 active:shadow-none" aria-label="Scroll Right">
+  <span class="material-symbols-outlined text-3xl">chevron_right</span>
+</button>
+<div class="flex overflow-x-auto hide-scrollbar gap-8 pb-8 snap-x" id="tech-stack-scroll">
+<!-- Card -->
+<div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+<span class="material-symbols-outlined text-2xl">code</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary">Languages</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">C/C++, Java, Python.</p>
+</div>
+<!-- Card -->
+<div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
+<span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary">Embedded &amp; Hardware</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Arduino Uno, ESP32, Raspberry Pi, Sensor &amp; Actuator Integration, Wiring &amp; Soldering, Hardware Debugging.</p>
+</div>
+<!-- Card -->
+<div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-2xl">developer_mode</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase">Web &amp; Backend</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Laravel, MVC Architecture, RESTful API (L5-Swagger), MySQL.</p>
+</div>
+<!-- Card -->
+<div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.error),0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-error text-on-error flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-error-container)] group-hover:-translate-y-1 transition-transform">
+<span class="material-symbols-outlined text-2xl">build</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-error mb-4 uppercase">Tools &amp; Workflow</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Git &amp; GitHub, Figma, Microsoft Excel.</p>
+</div>
+<!-- Card -->
+<div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+<div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+<span class="material-symbols-outlined text-2xl">public</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary">Domain Interests</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Machine Learning, Computer Vision, IoT, ERP Systems, Data Engineering.</p>
+</div>
+</div>
+</section>
+<!-- EXPERIENCE -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto" id="experience">
+<div class="flex items-center justify-between mb-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-5xl neon-text-primary">military_tech</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Experience</h2>
+</div>
+<span class="font-label-md text-label-md text-secondary animate-pulse neon-text-secondary">CAMPAIGN MODE _</span>
+</div>
+<div class="flex flex-col items-center gap-8">
+<!-- Exp 1 -->
+<div class="w-full max-w-3xl bg-surface-container-highest p-6 flex flex-col md:flex-row items-center gap-8 shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group border border-outline-variant">
+<div class="w-full md:w-1/3 text-center md:text-left">
+<div class="text-secondary font-headline-sm text-headline-sm uppercase mb-2 neon-text-secondary">Apr 2026 – Jun 2026</div>
+<div class="text-on-surface-variant font-label-md text-label-md">PT Magenta Indopack Sejahtera</div>
+</div>
+<div class="w-full md:w-2/3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase">Full Stack Developer Intern</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Contributed to the internal ERP system, integrated Accurate for financial data synchronization, and built/documented RESTful APIs using L5-Swagger UI.</p>
+</div>
+</div>
+<!-- Connector -->
+<div class="flex flex-col items-center justify-center gap-2 text-primary animate-pulse py-4 relative h-32 w-16">
+<span class="material-symbols-outlined text-4xl transform -rotate-90">double_arrow</span>
+<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transform -rotate-90 font-label-md text-label-md tracking-widest whitespace-nowrap opacity-50">NEXT LEVEL</span>
+</div>
+<!-- Exp 2 -->
+<div class="w-full max-w-3xl bg-surface-container-highest p-6 flex flex-col md:flex-row items-center gap-8 shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group border border-outline-variant">
+<div class="w-full md:w-1/3 text-center md:text-left">
+<div class="text-primary font-headline-sm text-headline-sm uppercase mb-2 neon-text-primary">Feb 2023 – Feb 2025</div>
+<div class="text-on-surface-variant font-label-md text-label-md">PT Radio Swara Mahasiswa Sanata Dharma</div>
+</div>
+<div class="w-full md:w-2/3">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase">Technical Division Coordinator</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Led hardware maintenance for broadcasting equipment, managed inventory, and coordinated the technical team.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROJECTS -->
+<section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto" id="projects">
+<div class="flex items-center justify-between mb-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-secondary text-5xl neon-text-secondary">stadia_controller</span>
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Arcade Cabinets</h2>
+</div>
+<span class="font-label-md text-label-md text-primary animate-pulse neon-text-primary">SELECT GAME _</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<!-- Cabinet 1 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+<div class="w-full bg-secondary text-on-secondary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.secondary)] z-10 neon-border-secondary">
+          Smart Parking System
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-4 shadow-[inset_0_0_15px_theme(colors.secondary)] overflow-hidden border border-secondary/50">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="Project image" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">A Raspberry Pi-based prototype utilizing computer vision.</p>
+<a class="inline-flex items-center justify-center w-48 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all" href="#">
+          VIEW PROJECT
+        </a>
+</div>
+<!-- Cabinet 2 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+<div class="w-full bg-primary text-on-primary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.primary)] z-10 neon-border-primary">
+          Radar Ultrasonic
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-4 shadow-[inset_0_0_15px_theme(colors.primary)] overflow-hidden border border-primary/50">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="Project image" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Hardware-based object detection system.</p>
+<a class="inline-flex items-center justify-center w-48 h-12 bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-primary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-primary-fixed)] transition-all" href="#">
+          VIEW PROJECT
+        </a>
+</div>
+<!-- Cabinet 3 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+<div class="w-full bg-tertiary text-on-tertiary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.tertiary)] z-10">
+          RC Car
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-4 shadow-[inset_0_0_15px_theme(colors.tertiary)] overflow-hidden border border-tertiary/50">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="Project image" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Robotic vehicle control project.</p>
+<a class="inline-flex items-center justify-center w-48 h-12 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all" href="#">
+          VIEW PROJECT
+        </a>
+</div>
+<!-- Cabinet 4 -->
+<div class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+<div class="w-full bg-error text-on-error font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.error)] z-10">
+          Population Census App
+        </div>
+<div class="relative w-[90%] aspect-video bg-background mb-4 shadow-[inset_0_0_15px_theme(colors.error)] overflow-hidden border border-error/50">
+<div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="Project image" style="background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLtM3oZgTA23BDM4uK80_E_CY6VIHXYLqzLxTuj6BkGYByMx9ponS5kPWU66PHGkjgwZto6WeXtR31UGufI9Kx3ZVt8hRyIZDAwZM9lzsurRkXV86KWEOQNX5wT_jekkA8kmb452B16PlRsl1rL9kHW-bXdUBKACQYuFoiwuZ-LTbXwEO2ofqjvOihvePwMUwz9hD5PkxwrYHjM0P4OGZGa1BOJik9ltWCDLTq6dkf3_6Q-S6WnSQNoVCrg')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Software for data management.</p>
+<a class="inline-flex items-center justify-center w-48 h-12 bg-error text-on-error font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-error-container)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-error-container)] transition-all" href="#">
+          VIEW PROJECT
+        </a>
+</div>
+</div>
+</section><section class="w-full py-24 px-margin-mobile lg:px-margin-desktop max-w-container-max mx-auto relative overflow-hidden" id="achievements">
+  <!-- Decorative Background Elements -->
+  <div class="absolute inset-0 pointer-events-none opacity-10 z-0">
+    <svg class="absolute top-10 left-10 w-16 h-16" viewBox="0 0 24 24" fill="#ffba35">
+      <path d="M12,2A10,10 0 1,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,11A1,1 0 1,1 11,12A1,1 0 0,1 12,11M16,11A1,1 0 1,1 15,12A1,1 0 0,1 16,11M12,7A1,1 0 1,1 11,8A1,1 0 0,1 12,7Z"></path>
+    </svg>
+    <svg class="absolute bottom-10 right-10 w-20 h-20" viewBox="0 0 24 24" fill="#46f3f3">
+      <path d="M12,2A10,10 0 0,0 2,12V22H22V12A10,10 0 0,0 12,2M9,10A2,2 0 1,1 7,12A2,2 0 0,1 9,10M17,10A2,2 0 1,1 15,12A2,2 0 0,1 17,10M7,20V18H9V20H7M11,20V18H13V20H11M15,20V18H17V20H15Z"></path>
+    </svg>
+  </div>
+
+  <div class="relative z-10">
+    <div class="flex items-center justify-between mb-16">
+      <div class="flex items-center gap-4">
+        <span class="material-symbols-outlined text-tertiary text-5xl shadow-[0_0_10px_theme(colors.tertiary)]">workspace_premium</span>
+        <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Achievements</h2>
+      </div>
+      <span class="font-label-md text-label-md text-tertiary animate-pulse">HIGH SCORE _</span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Achievement 1 -->
+      <div class="bg-surface-container-high p-6 border-2 border-tertiary/50 shadow-[0_0_15px_theme(colors.tertiary)] rounded-xl relative group hover:scale-[1.02] transition-transform">
+        <div class="flex items-start gap-4">
+          <div class="w-16 h-20 bg-tertiary/20 flex items-center justify-center border border-tertiary rounded shadow-[inset_0_0_10px_theme(colors.tertiary)]">
+            <span class="material-symbols-outlined text-tertiary text-3xl">token</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1">Certificate Name</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant uppercase">Issuer Name</p>
+            <p class="font-body-md text-body-md text-secondary mt-2">2024</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 2 -->
+      <div class="bg-surface-container-high p-6 border-2 border-secondary/50 shadow-[0_0_15px_theme(colors.secondary)] rounded-xl relative group hover:scale-[1.02] transition-transform">
+        <div class="flex items-start gap-4">
+          <div class="w-16 h-20 bg-secondary/20 flex items-center justify-center border border-secondary rounded shadow-[inset_0_0_10px_theme(colors.secondary)]">
+            <span class="material-symbols-outlined text-secondary text-3xl">token</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1">Certificate Name</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant uppercase">Issuer Name</p>
+            <p class="font-body-md text-body-md text-primary mt-2">2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 3 -->
+      <div class="bg-surface-container-high p-6 border-2 border-tertiary/50 shadow-[0_0_15px_theme(colors.tertiary)] rounded-xl relative group hover:scale-[1.02] transition-transform">
+        <div class="flex items-start gap-4">
+          <div class="w-16 h-20 bg-tertiary/20 flex items-center justify-center border border-tertiary rounded shadow-[inset_0_0_10px_theme(colors.tertiary)]">
+            <span class="material-symbols-outlined text-tertiary text-3xl">token</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1">Certificate Name</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant uppercase">Issuer Name</p>
+            <p class="font-body-md text-body-md text-secondary mt-2">2023</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievement 4 -->
+      <div class="bg-surface-container-high p-6 border-2 border-secondary/50 shadow-[0_0_15px_theme(colors.secondary)] rounded-xl relative group hover:scale-[1.02] transition-transform">
+        <div class="flex items-start gap-4">
+          <div class="w-16 h-20 bg-secondary/20 flex items-center justify-center border border-secondary rounded shadow-[inset_0_0_10px_theme(colors.secondary)]">
+            <span class="material-symbols-outlined text-secondary text-3xl">token</span>
+          </div>
+          <div>
+            <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1">Certificate Name</h3>
+            <p class="font-label-md text-label-md text-on-surface-variant uppercase">Issuer Name</p>
+            <p class="font-body-md text-body-md text-primary mt-2">2022</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</main>
+<footer class="w-full bg-surface-container-lowest border-t-8 border-surface-container-highest pt-12 pb-8 relative overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-mobile lg:px-margin-desktop">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+<div class="flex items-end gap-6">
+<div class="relative w-24 h-24 bg-surface-container rounded-full border-4 border-outline shadow-[0_0_20px_rgba(70,243,243,0.3)] neon-border-secondary">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-16 bg-surface-container-highest rounded-full rotate-45"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 bg-error rounded-full border-2 border-on-error shadow-[0_4px_0_#690005]"></div>
+</div>
+<div class="flex gap-4">
+<a aria-label="Instagram" class="flex items-center justify-center w-12 h-12 rounded-full bg-primary-container border-2 border-on-primary-container shadow-[0_4px_0_#56003a] hover:translate-y-1 hover:shadow-[0_2px_0_#56003a] transition-all" href="#">
+<span class="material-symbols-outlined text-on-primary-container">photo_camera</span>
+</a>
+<a aria-label="LinkedIn" class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-container border-2 border-on-secondary-container shadow-[0_4px_0_#005858] hover:translate-y-1 hover:shadow-[0_2px_0_#005858] transition-all" href="#">
+<span class="material-symbols-outlined text-on-secondary-container">work</span>
+</a>
+<a aria-label="GitHub" class="flex items-center justify-center w-12 h-12 rounded-full bg-tertiary-container border-2 border-on-tertiary-container shadow-[0_4px_0_#3a2600] hover:translate-y-1 hover:shadow-[0_2px_0_#3a2600] transition-all" href="#">
+<span class="material-symbols-outlined text-on-tertiary-container">code</span>
+</a>
+</div>
+</div>
+<div class="text-right">
+<div class="font-headline-sm text-headline-sm text-primary mb-2 neon-text-primary">INSERT COIN TO START</div>
+<div class="font-label-md text-label-md text-on-surface-variant mb-1">PLAYER 1: CONNECTED</div>
+<a class="font-label-md text-label-md text-secondary hover:underline neon-text-secondary" href="mailto:player1@example.com">player1@example.com</a>
+</div>
+</div>
+<div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-label-md text-on-surface-variant">
+<span class="">© 198X-2024 PORTFOLIO OS V2.1</span>
+<div class="flex gap-6">
+<span class="flex items-center gap-1"><span class="w-2 h-2 bg-secondary rounded-full shadow-[0_0_10px_theme(colors.secondary)]"></span>SYSTEM STABLE</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 bg-primary animate-ping rounded-full shadow-[0_0_10px_theme(colors.primary)]"></span>TRANSMITTING</span>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-tertiary shadow-[0_0_10px_theme(colors.secondary)]"></div>
+</footer>
+
+
+</body></html>
