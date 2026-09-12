@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕹️</text></svg>" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🕹️</text></svg>" />
   <style>
     @layer base {
 
@@ -193,39 +194,50 @@
         data-active-classes="bg-primary text-on-primary border-on-primary-fixed-variant">
         <a aria-current="page"
           class="marquee-btn px-4 py-2 font-label-md uppercase transition-all bg-primary text-on-primary border-on-primary-fixed-variant"
-          data-path="home" href="#home">Home</a>
+          data-path="home" href="#home" data-translate-key="nav-home">Home</a>
         <a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all"
-          data-path="tech-stack" href="#tech-stack">Tech Stack</a>
+          data-path="tech-stack" href="#tech-stack" data-translate-key="nav-tech">Tech Stack</a>
         <a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all"
-          data-path="experience" href="#experience">Experience</a>
+          data-path="experience" href="#experience" data-translate-key="nav-exp">Experience</a>
         <a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all"
-          data-path="projects" href="#projects">Projects</a>
+          data-path="projects" href="#projects" data-translate-key="nav-proj">Projects</a>
         <a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all"
-          data-path="achievements" href="#achievements">Certificates</a>
+          data-path="achievements" href="#achievements" data-translate-key="nav-cert">Certificates</a>
         <a class="marquee-btn px-4 py-2 bg-surface-container-high text-label-md font-label-md uppercase text-on-surface-variant hover:text-secondary transition-all"
-          data-path="contact" href="#contact">Contact</a>
+          data-path="contact" href="#contact" data-translate-key="nav-contact">Contact</a>
       </nav>
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-4 ml-auto">
         <!-- Hamburger Menu Button -->
-        <button id="mobile-menu-btn" class="xl:hidden text-secondary hover:text-primary transition-colors focus:outline-none" aria-label="Toggle Menu">
+        <button id="mobile-menu-btn"
+          class="xl:hidden text-secondary hover:text-primary transition-colors focus:outline-none"
+          aria-label="Toggle Menu">
           <span class="material-symbols-outlined text-4xl">menu</span>
         </button>
+
       </div>
     </div>
   </header>
 
   <!-- Mobile Menu Overlay -->
-  <div id="mobile-menu-overlay" class="fixed inset-0 z-[150] bg-background/95 backdrop-blur-lg translate-x-full transition-transform duration-300 xl:hidden flex flex-col items-center justify-center gap-8">
+  <div id="mobile-menu-overlay"
+    class="fixed inset-0 z-[150] bg-background/95 backdrop-blur-lg translate-x-full transition-transform duration-300 xl:hidden flex flex-col items-center justify-center gap-8">
     <nav class="flex flex-col items-center gap-6">
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home" href="#home">Home</a>
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="tech-stack" href="#tech-stack">Tech Stack</a>
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="experience" href="#experience">Experience</a>
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="projects" href="#projects">Projects</a>
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="achievements" href="#achievements">Certificates</a>
-      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors" data-path="contact" href="#contact">Contact</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="home" href="#home" data-translate-key="nav-home">Home</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="tech-stack" href="#tech-stack" data-translate-key="nav-tech">Tech Stack</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="experience" href="#experience" data-translate-key="nav-exp">Experience</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="projects" href="#projects" data-translate-key="nav-proj">Projects</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="achievements" href="#achievements" data-translate-key="nav-cert">Certificates</a>
+      <a class="mobile-nav-link text-headline-sm uppercase font-headline-sm text-on-surface-variant hover:text-primary transition-colors"
+        data-path="contact" href="#contact" data-translate-key="nav-contact">Contact</a>
     </nav>
     <!-- Close Button -->
-    <button id="mobile-menu-close" class="mt-8 marquee-btn px-6 py-2 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container">
+    <button id="mobile-menu-close"
+      class="mt-8 marquee-btn px-6 py-2 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container">
       DISMISS MENU
     </button>
   </div>
@@ -384,11 +396,13 @@ void main() {
             class="flex flex-col items-center gap-4 bg-surface-container-high/80 backdrop-blur-md px-4 py-6 sm:px-6 rounded-2xl sm:rounded-3xl shadow-[0_0_10px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] max-w-3xl border border-secondary/50 mx-4 sm:mx-0">
             <div class="flex items-center gap-4 border-b border-outline-variant pb-4 w-full justify-center">
               <span class="w-3 h-3 rounded-full bg-error animate-ping"></span>
-              <p class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-center">
+              <p class="font-label-md text-label-md text-on-surface uppercase tracking-widest text-center"
+                data-translate-key="hero-subtitle">
                 Machine Learning Engineer | Web Dev | IoT
               </p>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center mt-2 leading-relaxed">
+            <p class="font-body-md text-body-md text-on-surface-variant text-center mt-2 leading-relaxed"
+              data-translate-key="hero-intro">
               Hi! I'm Brian Willyandri Siregar, an Informatics graduate from Sanata Dharma University with a passion for
               Machine Learning and intelligent systems.
 
@@ -404,7 +418,7 @@ void main() {
           <div
             class="mt-8 px-10 py-5 bg-primary/20 text-primary border-2 border-primary font-headline-sm text-headline-sm uppercase tracking-widest shadow-[0_0_20px_theme(colors.primary)] rounded-full select-none flex items-center gap-4">
             <span class="material-symbols-outlined text-4xl animate-pulse">sports_esports</span>
-            Need Dopamine
+            <span data-translate-key="hero-status">Need Dopamine</span>
           </div>
         </div>
       </section>
@@ -414,7 +428,8 @@ void main() {
         id="tech-stack">
         <div class="flex items-center gap-4 mb-16">
           <span class="material-symbols-outlined text-primary text-5xl neon-text-primary">memory</span>
-          <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Tech Inventory</h2>
+          <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest"
+            data-translate-key="title-tech">Tech Inventory</h2>
         </div>
         <button onclick="document.querySelector('#tech-stack-scroll').scrollBy({left: -432, behavior: 'smooth'})"
           class="absolute left-0 top-[60%] -translate-y-1/2 z-10 hidden md:flex items-center justify-center w-12 h-12 bg-primary text-on-primary border-4 border-on-primary-fixed-variant rounded-full cursor-pointer hover:bg-primary-fixed transition-colors shadow-[0_0_15px_theme(colors.primary)]"
@@ -434,9 +449,10 @@ void main() {
               class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
               <span class="material-symbols-outlined text-2xl">code</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary">Languages
-            </h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">C/C++, Java, Python.</p>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary"
+              data-translate-key="tech-card1-title">LanguageS</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card1-desc">
+              Python, JavaScript, PHP, Java, C++.</p>
           </div>
           <!-- Card 2 -->
           <div
@@ -445,9 +461,11 @@ void main() {
               class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
               <span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary">Embedded &amp;
-              Hardware</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Arduino Uno, ESP32, Raspberry Pi,<br>Sensor &amp; Actuator Integration, Wiring &amp; Soldering,<br>Hardware Debugging.</p>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary"
+              data-translate-key="tech-card2-title">Embedded &amp; Hardware</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card2-desc">
+              Arduino Uno, ESP32, Raspberry Pi,<br>Sensor &amp; Actuator Integration, Wiring &amp;
+              Soldering,<br>Hardware Debugging.</p>
           </div>
           <!-- Card 3 -->
           <div
@@ -456,8 +474,10 @@ void main() {
               class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
               <span class="material-symbols-outlined text-2xl">developer_mode</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase">Web &amp; Backend</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.</p>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase"
+              data-translate-key="tech-card3-title">Web &amp; Backend</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card3-desc">
+              Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.</p>
           </div>
           <!-- Card 4 -->
           <div
@@ -466,9 +486,11 @@ void main() {
               class="w-12 h-12 bg-error text-on-error flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-error-container)] group-hover:-translate-y-1 transition-transform">
               <span class="material-symbols-outlined text-2xl">build</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-error mb-4 uppercase">Tools &amp; Workflow</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Git &amp; GitHub, Figma, Microsoft Excel.
-            </p>
+            <h3 class="font-headline-sm text-headline-sm text-error mb-4 uppercase"
+              data-translate-key="tech-card4-title">Tools</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card4-desc">
+              VS code, NetBeans, Intelij IDE, PyCharm, Unity, Aseprite, Obsidian, Trello, Draw.io, Figma, Microsoft
+              Excel, Accurate ERP Integration, SAP (ERP Concepts).</p>
           </div>
           <!-- Card 5 -->
           <div
@@ -477,9 +499,10 @@ void main() {
               class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
               <span class="material-symbols-outlined text-2xl">public</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary">Domain
-              Interests</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6">Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.</p>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary"
+              data-translate-key="tech-card5-title">Domain Interests</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card5-desc">
+              Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.</p>
           </div>
         </div>
       </section>
@@ -489,7 +512,8 @@ void main() {
         <div class="flex items-center justify-between mb-16">
           <div class="flex items-center gap-4">
             <span class="material-symbols-outlined text-primary text-5xl neon-text-primary">military_tech</span>
-            <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Experience</h2>
+            <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest"
+              data-translate-key="title-exp">Experience</h2>
           </div>
           <span class="font-label-md text-label-md text-secondary animate-pulse neon-text-secondary">CAMPAIGN MODE
             _</span>
@@ -505,14 +529,16 @@ void main() {
             </div>
             <div class="w-full md:w-2/3 flex flex-col items-start gap-4">
               <div>
-                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase">Full Stack Developer Intern
-                </h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Designed and developed an end-to-end ERP
-                  application to support company operations, integrated Accurate, and built APIs with L5-Swagger.</p>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase"
+                  data-translate-key="exp-card1-role">Full Stack Developer Intern</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant" data-translate-key="exp-card1-summary">
+                  Designed and developed an end-to-end ERP application to support company operations, integrated
+                  Accurate, and built APIs with L5-Swagger.</p>
               </div>
               <button
-                onclick="openProjectModal('PT Magenta Indopack Sejahtera', ['./assets/images/Sertifikat Magenta.png'], `Responsible for designing and developing an end-to-end Enterprise Resource Planning (ERP) application to support company operations, and integrating the system with Accurate to optimize internal financial data management.<br><br><strong>Key Responsibilities:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Designed and developed end-to-end features for the company's ERP web application.</li><li>Integrated system components with Accurate to ensure seamless synchronization and optimization of financial data.</li><li>Built and documented RESTful APIs using L5-Swagger UI to facilitate clear, standardized communication and integration testing for the development team.</li></ul>`, null, null, null, 'Apr 2026 – Jun 2026')"
-                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all">
+                onclick="openProjectModal('magenta-intern', ['./assets/images/Sertifikat Magenta.png'], null, null, null, null, 'Apr 2026 – Jun 2026')"
+                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+                data-translate-key="btn-details1">
                 VIEW DETAILS
               </button>
             </div>
@@ -536,14 +562,16 @@ void main() {
             </div>
             <div class="w-full md:w-2/3 flex flex-col items-start gap-4">
               <div>
-                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase">Technical Division
-                  Coordinator</h3>
-                <p class="font-body-md text-body-md text-on-surface-variant">Oversaw hardware maintenance, managed
-                  technical inventory, and coordinated team communication to support broadcasting operations.</p>
+                <h3 class="font-headline-sm text-headline-sm text-on-surface mb-2 uppercase"
+                  data-translate-key="exp-card2-role">Technical Division Coordinator</h3>
+                <p class="font-body-md text-body-md text-on-surface-variant" data-translate-key="exp-card2-summary">
+                  Oversaw hardware maintenance, managed technical inventory, and coordinated team communication to
+                  support broadcasting operations.</p>
               </div>
               <button
-                onclick="openProjectModal('Radio Swara Mahasiswa Sanata Dharma', ['./assets/images/id card.jpeg', './assets/images/all crew.jpeg'], `Responsible for overseeing hardware maintenance operations, managing technical equipment and inventory, and coordinating team communication to ensure efficient and reliable technical support.<br><br><strong>Key Responsibilities:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Managed hardware maintenance and troubleshooting activities.</li><li>Oversaw equipment management, inventory, and operational readiness.</li><li>Coordinated team communication to ensure efficient workflow and task completion.</li></ul>`, null, null, null, 'Feb 2023 – Feb 2025')"
-                class="marquee-btn px-6 py-2 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-primary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-primary-fixed)] transition-all">
+                onclick="openProjectModal('tech-coordinator', ['./assets/images/id card.jpeg', './assets/images/all crew.jpeg'], null, null, null, null, 'Feb 2023 – Feb 2025')"
+                class="marquee-btn px-6 py-2 bg-primary text-on-primary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-primary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-primary-fixed)] transition-all"
+                data-translate-key="btn-details2">
                 VIEW DETAILS
               </button>
             </div>
@@ -556,7 +584,8 @@ void main() {
         <div class="flex items-center justify-between mb-16">
           <div class="flex items-center gap-4">
             <span class="material-symbols-outlined text-secondary text-5xl neon-text-secondary">stadia_controller</span>
-            <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Arcade Cabinets</h2>
+            <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest"
+              data-translate-key="title-proj">Arcade Cabinets</h2>
           </div>
           <span class="font-label-md text-label-md text-primary animate-pulse neon-text-primary">SELECT GAME _</span>
         </div>
@@ -575,11 +604,13 @@ void main() {
                 style="background-image: url('./assets/images/rashpeberry1.jpeg')"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">A Raspberry Pi-based
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card1-summary">A Raspberry Pi-based
               prototype utilizing computer vision.</p>
             <button
-              onclick="openProjectModal('Smart Parking System', ['./assets/images/rashpeberry1.jpeg', './assets/images/rashpeberry2.jpeg'], 'A Raspberry Pi-based smart parking prototype utilizing computer vision. This intelligent system detects vehicle occupancy in real-time, processes visual data directly at the edge, and updates database tables to guide drivers to open spaces. It represents a robust integration of IoT hardware, cameras, and backend processing.', 'https://youtu.be/uxpMoRtkHdA', null, null, 'Team Project')"
-              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all">
+              onclick="openProjectModal('smart-parking', ['./assets/images/rashpeberry1.jpeg', './assets/images/rashpeberry2.jpeg'], null, 'https://youtu.be/uxpMoRtkHdA', null, null, 'Team Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+              data-translate-key="btn-proj1">
               VIEW PROJECT
             </button>
           </div>
@@ -597,11 +628,13 @@ void main() {
                 style="background-image: url('./assets/images/AmiCatering1.png')"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">A custom web
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card2-summary">A custom web
               application built to streamline operations for AMI Catering.</p>
             <button
-              onclick="openProjectModal('Website AMI Catering', ['./assets/images/AmiCatering1.png', './assets/images/AmiCatering2.png'], 'A custom web application built to streamline operations for AMI Catering. Features end-to-end booking capabilities, detailed menu management, order tracking, and administrative control panel. Built with responsive layout, premium typography, and optimized database queries.', null, 'https://github.com/Gdankz/Ami-Catering', null, 'Team Project')"
-              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-primary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-primary-fixed)] transition-all">
+              onclick="openProjectModal('ami-catering', ['./assets/images/AmiCatering1.png', './assets/images/AmiCatering2.png'], null, null, 'https://github.com/Gdankz/Ami-Catering', null, 'Team Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-primary text-on-primary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-primary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-primary-fixed)] transition-all"
+              data-translate-key="btn-proj2">
               VIEW PROJECT
             </button>
           </div>
@@ -618,11 +651,13 @@ void main() {
                 style="background-image: url('./assets/images/mobil rc.jpeg')"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Robotic vehicle
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card3-summary">Robotic vehicle
               control project utilizing ESP32.</p>
             <button
-              onclick="openProjectModal('Robotic RC Car', ['./assets/images/mobil rc.jpeg'], 'A hardware-based robotic vehicle control project. Features dual-motor control, wireless ESP32 communication, and real-time obstacle avoidance. The project demonstrates precise low-level C/C++ hardware coding and sensor integration.', null, null, null, 'Personal Project')"
-              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all">
+              onclick="openProjectModal('rc-car', ['./assets/images/mobil rc.jpeg'], null, null, null, null, 'Personal Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all"
+              data-translate-key="btn-proj3">
               VIEW PROJECT
             </button>
           </div>
@@ -639,11 +674,13 @@ void main() {
                 style="background-image: url('./assets/images/KKN.png')"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Software for local
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card4-summary">Software for local
               community demographics aggregation.</p>
             <button
-              onclick="openProjectModal('Population Census App', ['./assets/images/KKN.png'], 'A comprehensive data entry and analysis software built to support local community data aggregation. Enables census coordinators to securely log household details, generate real-time demographic statistics, and produce PDF report summaries.', null, 'private', null, 'Personal Project')"
-              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-error text-on-error font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-error-container)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-error-container)] transition-all">
+              onclick="openProjectModal('census-app', ['./assets/images/KKN.png'], null, null, 'private', null, 'Personal Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-error text-on-error font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-error-container)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-error-container)] transition-all"
+              data-translate-key="btn-proj4">
               VIEW PROJECT
             </button>
           </div>
@@ -660,11 +697,35 @@ void main() {
                 style="background-image: url('./assets/images/Raspberry Pi 5.jpeg')"></div>
               <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
             </div>
-            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6">Series of embedded
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card5-summary">Series of embedded
               systems and IoT interfacing modules on Raspberry Pi 5.</p>
             <button
-              onclick="openProjectModal('Raspberry Pi 5 Projects', ['./assets/images/Raspberry Pi 5.jpeg'], 'A collection of embedded system laboratory tasks demonstrating OS installation, VNC remote access, GPIO control with LEDs & buttons, alarm/siren systems, PIR motion detection, temperature logging, webcam streaming, and local web servers.', null, null, raspberryPi5List, 'Team Project')"
-              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all">
+              onclick="openProjectModal('raspi-5', ['./assets/images/Raspberry Pi 5.jpeg'], null, null, null, raspberryPi5List, 'Team Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-tertiary text-on-tertiary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all"
+              data-translate-key="btn-proj5">
+              VIEW PROJECT
+            </button>
+          </div>
+          <!-- Cabinet 6 -->
+          <div
+            class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+            <div
+              class="w-full bg-secondary text-on-secondary font-headline-sm text-headline-sm text-center py-2 uppercase mb-4 shadow-[0_0_15px_theme(colors.secondary)] z-10 neon-border-secondary">
+              Utopia Game
+            </div>
+            <div
+              class="relative w-[90%] aspect-video bg-background mb-4 shadow-[inset_0_0_15px_theme(colors.secondary)] overflow-hidden border border-secondary/50">
+              <div class="absolute inset-0 bg-cover bg-center mix-blend-screen opacity-80" data-alt="Project image"
+                style="background-image: url('./assets/images/utopia-loading.png')"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-background to-transparent"></div>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-card6-summary">Personal project in development.</p>
+            <button
+              onclick="openProjectModal('utopia-game', ['./assets/images/utopia-loading.png'], null, null, null, null, 'Personal Project')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+              data-translate-key="btn-proj6">
               VIEW PROJECT
             </button>
           </div>
@@ -694,7 +755,8 @@ void main() {
             <div class="flex items-center gap-4">
               <span
                 class="material-symbols-outlined text-tertiary text-5xl shadow-[0_0_10px_theme(colors.tertiary)]">workspace_premium</span>
-              <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest">Achievements</h2>
+              <h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-widest"
+                data-translate-key="title-ach">Achievements</h2>
             </div>
             <span class="font-label-md text-label-md text-tertiary animate-pulse">HIGH SCORE _</span>
           </div>
@@ -709,8 +771,8 @@ void main() {
                   <span class="material-symbols-outlined text-tertiary text-3xl">token</span>
                 </div>
                 <div>
-                  <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1">Full Stack Developer Intern
-                  </h3>
+                  <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1"
+                    data-translate-key="ach-card1-role">Full Stack Developer Intern</h3>
                   <p class="font-label-md text-label-md text-on-surface-variant uppercase">PT Magenta Indopack Sejahtera
                   </p>
                   <p class="font-body-md text-body-md text-secondary mt-2">2026</p>
@@ -718,7 +780,8 @@ void main() {
               </div>
               <button
                 onclick="openCertificate('Full Stack Developer Internship Certificate', './assets/images/Sertifikat Magenta.png')"
-                class="marquee-btn px-6 py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all">
+                class="marquee-btn px-6 py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all"
+                data-translate-key="btn-ach1">
                 VIEW CERTIFICATE
               </button>
             </div>
@@ -732,7 +795,8 @@ void main() {
                   <span class="material-symbols-outlined text-secondary text-3xl">token</span>
                 </div>
                 <div>
-                  <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1">Technical Coordinator</h3>
+                  <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1"
+                    data-translate-key="ach-card2-role">Technical Coordinator</h3>
                   <p class="font-label-md text-label-md text-on-surface-variant uppercase">PT Radio Swara Mahasiswa
                     Sanata Dharma</p>
                   <p class="font-body-md text-body-md text-primary mt-2">2025</p>
@@ -740,7 +804,8 @@ void main() {
               </div>
               <button
                 onclick="openCertificate('Technical Division Coordinator (MASDHA) Certificate', './assets/images/Sertifikat Masdha1.png')"
-                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all">
+                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+                data-translate-key="btn-ach2">
                 VIEW CERTIFICATE
               </button>
             </div>
@@ -754,7 +819,8 @@ void main() {
                   <span class="material-symbols-outlined text-tertiary text-3xl">token</span>
                 </div>
                 <div>
-                  <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1">Equipment Management</h3>
+                  <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1"
+                    data-translate-key="ach-card3-role">Equipment Management</h3>
                   <p class="font-label-md text-label-md text-on-surface-variant uppercase">PT Radio Swara Mahasiswa
                     Sanata Dharma</p>
                   <p class="font-body-md text-body-md text-secondary mt-2">2023</p>
@@ -762,7 +828,8 @@ void main() {
               </div>
               <button
                 onclick="openCertificate('Equipment Management Excellence (MASDHA) Certificate', './assets/images/Sertifikat Masdha2.png')"
-                class="marquee-btn px-6 py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all">
+                class="marquee-btn px-6 py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all"
+                data-translate-key="btn-ach3">
                 VIEW CERTIFICATE
               </button>
             </div>
@@ -776,14 +843,16 @@ void main() {
                   <span class="material-symbols-outlined text-secondary text-3xl">token</span>
                 </div>
                 <div>
-                  <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1">ERP Fundamentals</h3>
+                  <h3 class="font-headline-sm text-headline-sm text-secondary uppercase mb-1"
+                    data-translate-key="ach-card4-role">ERP Fundamentals</h3>
                   <p class="font-label-md text-label-md text-on-surface-variant uppercase">SAP ERP System</p>
                   <p class="font-body-md text-body-md text-primary mt-2">2023</p>
                 </div>
               </div>
               <button
                 onclick="openCertificate('SAP ERP System Fundamentals Certificate', './assets/images/Sertifikat SAP.png')"
-                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all">
+                class="marquee-btn px-6 py-2 bg-secondary text-on-secondary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-secondary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+                data-translate-key="btn-ach4">
                 VIEW CERTIFICATE
               </button>
             </div>
@@ -826,9 +895,10 @@ void main() {
           </div>
         </div>
         <div class="text-right">
-          <div class="font-headline-sm text-headline-sm text-primary mb-2 neon-text-primary">INSERT DOPAMINE TO START
-          </div>
-          <div class="font-label-md text-label-md text-on-surface-variant mb-1">PLAYER 1: CONNECTED</div>
+          <div class="font-headline-sm text-headline-sm text-primary mb-2 neon-text-primary"
+            data-translate-key="foot-headline">INSERT DOPAMINE TO START</div>
+          <div class="font-label-md text-label-md text-on-surface-variant mb-1" data-translate-key="foot-status">PLAYER
+            1: CONNECTED</div>
           <a class="font-label-md text-label-md text-secondary hover:underline neon-text-secondary"
             href="mailto:briansiregar09@gmail.com">briansiregar09@gmail.com</a>
         </div>
@@ -838,10 +908,11 @@ void main() {
         <span>© 2022-2026 PORTFOLIO OS V1.0</span>
         <div class="flex gap-6">
           <span class="flex items-center gap-1"><span
-              class="w-2 h-2 bg-secondary rounded-full shadow-[0_0_10px_theme(colors.secondary)]"></span>SYSTEM
-            STABLE</span>
+              class="w-2 h-2 bg-secondary rounded-full shadow-[0_0_10px_theme(colors.secondary)]"></span><span
+              data-translate-key="foot-sys">SYSTEM STABLE</span></span>
           <span class="flex items-center gap-1"><span
-              class="w-2 h-2 bg-primary animate-ping rounded-full shadow-[0_0_10px_theme(colors.primary)]"></span>TRANSMITTING</span>
+              class="w-2 h-2 bg-primary animate-ping rounded-full shadow-[0_0_10px_theme(colors.primary)]"></span><span
+              data-translate-key="foot-trans">TRANSMITTING</span></span>
         </div>
       </div>
     </div>
@@ -954,7 +1025,7 @@ void main() {
               <path
                 d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
             </svg>
-            <span>WATCH ON YOUTUBE</span>
+            <span data-translate-key="modal-btn-yt">WATCH ON YOUTUBE</span>
           </a>
           <!-- GitHub Button -->
           <a id="project-modal-github" href="#" target="_blank"
@@ -963,13 +1034,14 @@ void main() {
               <path
                 d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
             </svg>
-            <span>VIEW CODEBASE</span>
+            <span data-translate-key="modal-btn-github">VIEW CODEBASE</span>
           </a>
           <!-- Private Codebase Label -->
           <div id="project-modal-private-label"
             class="hidden items-center gap-2 px-4 py-2 bg-error/25 border border-error text-on-surface font-label-md text-label-md rounded">
             <span class="material-symbols-outlined text-error text-[18px]">lock</span>
-            <span class="text-error uppercase">Private Codebase (Confidentiality Agreement)</span>
+            <span class="text-error uppercase" data-translate-key="modal-btn-private">Private Codebase (Confidentiality
+              Agreement)</span>
           </div>
         </div>
       </div>
@@ -977,13 +1049,228 @@ void main() {
       <!-- Close Button -->
       <div class="flex flex-col items-center gap-2 mt-4">
         <button id="project-modal-close-btn"
-          class="marquee-btn px-8 py-3 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container hover:bg-error-container transition-all active:translate-y-[2px] active:border-b-0">
+          class="marquee-btn px-8 py-3 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container hover:bg-error-container transition-all active:translate-y-[2px] active:border-b-0"
+          data-translate-key="modal-btn-close">
           DISMISS MISSION [ESC]
         </button>
-        <span class="font-label-md text-[12px] text-on-surface-variant animate-pulse">PRESS BUTTON OR OUTSIDE TO
-          CLOSE</span>
+        <span class="font-label-md text-[12px] text-on-surface-variant animate-pulse"
+          data-translate-key="modal-footer">PRESS BUTTON OR OUTSIDE TO CLOSE</span>
       </div>
       <script>
+        // Multi-language Translation Dictionaries
+        const translations = {
+          en: {
+            "nav-home": "Home",
+            "nav-tech": "Tech Stack",
+            "nav-exp": "Experience",
+            "nav-proj": "Projects",
+            "nav-cert": "Certificates",
+            "nav-contact": "Contact",
+            "hero-subtitle": "Machine Learning Engineer | Web Dev | IoT",
+            "hero-intro": "Hi! I'm Brian Willyandri Siregar, an Informatics graduate from Sanata Dharma University with a passion for Machine Learning and intelligent systems.<br><br>Over the course of my studies and projects, I've built a well-rounded foundation in software engineering, combining web development in Laravel with hands-on hardware–software integration—such as developing a Raspberry Pi-based smart parking system. Whether it's training data-driven models, designing databases, or crafting backend solutions, I love bridging the gap between software and the physical world.<br><br>I’m always eager to learn, adapt to new technologies, and build impactful tools that solve real-world problems.",
+            "hero-status": "Need Dopamine",
+            "title-tech": "Tech Inventory",
+            "tech-card1-title": "Languages",
+            "tech-card1-desc": "Python, JavaScript, PHP, Java, C++.",
+            "tech-card2-title": "Embedded & Hardware",
+            "tech-card2-desc": "Arduino Uno, ESP32, Raspberry Pi,<br>Sensor &amp; Actuator Integration, Wiring &amp; Soldering,<br>Hardware Debugging.",
+            "tech-card3-title": "Web & Backend",
+            "tech-card3-desc": "Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.",
+            "tech-card4-title": "Tools & Workflow",
+            "tech-card4-desc": "VS code, NetBeans, Intelij IDE, PyCharm,<br> Unity, Aseprite,Obsidian, Trello, Draw.io, Figma,<br> Microsoft Excel, Accurate ERP Integration, SAP.",
+            "tech-card5-title": "Domain Interests",
+            "tech-card5-desc": "Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.",
+            "title-exp": "Experience",
+            "exp-card1-role": "Full Stack Developer Intern",
+            "exp-card1-summary": "Designed and developed an end-to-end ERP application to support company operations, integrated Accurate, and built APIs with L5-Swagger.",
+            "btn-details1": "VIEW DETAILS",
+            "exp-card2-role": "Technical Division Coordinator",
+            "exp-card2-summary": "Oversaw hardware maintenance, managed technical inventory, and coordinated team communication to support broadcasting operations.",
+            "btn-details2": "VIEW DETAILS",
+            "title-proj": "Arcade Cabinets",
+            "proj-card1-summary": "A Raspberry Pi-based prototype utilizing computer vision.",
+            "btn-proj1": "VIEW PROJECT",
+            "proj-card2-summary": "A custom web application built to streamline operations for AMI Catering.",
+            "btn-proj2": "VIEW PROJECT",
+            "proj-card3-summary": "Robotic vehicle control project utilizing ESP32.",
+            "btn-proj3": "VIEW PROJECT",
+            "proj-card4-summary": "Software for local community demographics aggregation.",
+            "btn-proj4": "VIEW PROJECT",
+            "proj-card5-summary": "Series of embedded systems and IoT interfacing modules on Raspberry Pi 5.",
+            "btn-proj5": "VIEW PROJECT",
+            "title-ach": "Achievements",
+            "ach-card1-role": "Full Stack Developer Intern",
+            "btn-ach1": "VIEW CERTIFICATE",
+            "ach-card2-role": "Technical Coordinator",
+            "btn-ach2": "VIEW CERTIFICATE",
+            "ach-card3-role": "Equipment Management",
+            "btn-ach3": "VIEW CERTIFICATE",
+            "ach-card4-role": "ERP Fundamentals",
+            "btn-ach4": "VIEW CERTIFICATE",
+            "foot-headline": "INSERT DOPAMINE TO START",
+            "foot-status": "PLAYER 1: CONNECTED",
+            "foot-sys": "SYSTEM STABLE",
+            "foot-trans": "TRANSMITTING",
+            "modal-btn-yt": "WATCH ON YOUTUBE",
+            "modal-btn-github": "VIEW CODEBASE",
+            "modal-btn-private": "Private Codebase (Confidentiality Agreement)",
+            "modal-btn-close": "DISMISS MISSION [ESC]",
+            "modal-footer": "PRESS BUTTON OR OUTSIDE TO CLOSE"
+          },
+          id: {
+            "nav-home": "Home",
+            "nav-tech": "Tech Stack",
+            "nav-exp": "Experience",
+            "nav-proj": "Projects",
+            "nav-cert": "Certificates",
+            "nav-contact": "Contact",
+            "hero-subtitle": "Machine Learning Engineer | Web Dev | IoT",
+            "hero-intro": "Halo! Saya Brian Willyandri Siregar, lulusan Informatika dari Universitas Sanata Dharma dengan minat mendalam pada Machine Learning dan sistem cerdas.<br><br>Selama masa studi dan berbagai proyek, saya telah membangun fondasi yang kuat dalam rekayasa perangkat lunak, menggabungkan pengembangan web Laravel dengan integrasi perangkat keras-perangkat lunak secara langsung seperti merancang prototipe sistem parkir pintar berbasis Raspberry Pi. Baik itu melatih model berbasis data, merancang basis data, maupun membangun solusi backend, saya sangat senang menghubungkan perangkat lunak dengan dunia fisik.<br><br>Saya selalu antusias untuk belajar, beradaptasi dengan teknologi baru, dan membangun alat yang berdampak nyata dalam memecahkan masalah kehidupan sehari-hari.",
+            "hero-status": "Need Dopamine",
+            "title-tech": "Tech Inventory",
+            "tech-card1-title": "Languages",
+            "tech-card1-desc": "C/C++, Java, Python.",
+            "tech-card2-title": "Embedded & Hardware",
+            "tech-card2-desc": "Arduino Uno, ESP32, Raspberry Pi,<br>Integrasi Sensor &amp; Aktuator, Pengabelan &amp; Penyolderan,<br>Debugging Perangkat Keras.",
+            "tech-card3-title": "Web & Backend",
+            "tech-card3-desc": "Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.",
+            "tech-card4-title": "Tools & Workflow",
+            "tech-card4-desc": "Git &amp; GitHub, Figma, Microsoft Excel.",
+            "tech-card5-title": "Domain Interests",
+            "tech-card5-desc": "Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.",
+            "title-exp": "Experience",
+            "exp-card1-role": "Full Stack Developer Intern",
+            "exp-card1-summary": "Merancang dan membangun aplikasi ERP end-to-end untuk mendukung operasional perusahaan, mengintegrasikan sistem dengan Accurate, serta membuat API L5-Swagger.",
+            "btn-details1": "VIEW DETAILS",
+            "exp-card2-role": "Technical Division Coordinator",
+            "exp-card2-summary": "Mengawasi pemeliharaan perangkat keras, mengelola peralatan teknis &amp; inventaris, serta mengoordinasikan komunikasi tim untuk penyiaran.",
+            "btn-details2": "VIEW DETAILS",
+            "title-proj": "Arcade Cabinets",
+            "proj-card1-summary": "Prototipe sistem parkir pintar berbasis Raspberry Pi menggunakan computer vision.",
+            "btn-proj1": "VIEW PROJECT",
+            "proj-card2-summary": "Aplikasi web kustom yang dibangun untuk menyederhanakan operasional AMI Catering.",
+            "btn-proj2": "VIEW PROJECT",
+            "proj-card3-summary": "Kontrol kendaraan robotik menggunakan ESP32 dengan penghindaran rintangan.",
+            "btn-proj3": "VIEW PROJECT",
+            "proj-card4-summary": "Perangkat lunak untuk sensus dan agregasi demografi komunitas lokal.",
+            "btn-proj4": "VIEW PROJECT",
+            "proj-card5-summary": "Koleksi modul sistem tertanam dan antarmuka sensor IoT pada Raspberry Pi 5.",
+            "btn-proj5": "VIEW PROJECT",
+            "title-ach": "Achievements",
+            "ach-card1-role": "Full Stack Developer Intern",
+            "btn-ach1": "VIEW CERTIFICATE",
+            "ach-card2-role": "Technical Coordinator",
+            "btn-ach2": "VIEW CERTIFICATE",
+            "ach-card3-role": "Equipment Management",
+            "btn-ach3": "VIEW CERTIFICATE",
+            "ach-card4-role": "ERP Fundamentals",
+            "btn-ach4": "VIEW CERTIFICATE",
+            "foot-headline": "INSERT DOPAMINE TO START",
+            "foot-status": "PLAYER 1: CONNECTED",
+            "foot-sys": "SYSTEM STABLE",
+            "foot-trans": "TRANSMITTING",
+            "modal-btn-yt": "WATCH ON YOUTUBE",
+            "modal-btn-github": "VIEW CODEBASE",
+            "modal-btn-private": "Private Codebase (Confidentiality Agreement)",
+            "modal-btn-close": "DISMISS MISSION [ESC]",
+            "modal-footer": "PRESS BUTTON OR OUTSIDE TO CLOSE"
+          }
+        };
+
+        const projectTranslations = {
+          en: {
+            "magenta-intern": {
+              title: "PT Magenta Indopack Sejahtera",
+              desc: `Responsible for designing and developing an end-to-end Enterprise Resource Planning (ERP) application to support company operations, and integrating the system with Accurate to optimize internal financial data management.<br><br><strong>Key Responsibilities:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Designed and developed end-to-end features for the company's ERP web application.</li><li>Integrated system components with Accurate to ensure seamless synchronization and optimization of financial data.</li><li>Built and documented RESTful APIs using L5-Swagger UI to facilitate clear, standardized communication and integration testing for the development team.</li></ul>`
+            },
+            "tech-coordinator": {
+              title: "Radio Swara Mahasiswa Sanata Dharma",
+              desc: `Responsible for overseeing hardware maintenance operations, managing technical equipment and inventory, and coordinating team communication to ensure efficient and reliable technical support.<br><br><strong>Key Responsibilities:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Managed hardware maintenance and troubleshooting activities.</li><li>Oversaw equipment management, inventory, and operational readiness.</li><li>Coordinated team communication to ensure efficient workflow and task completion.</li></ul>`
+            },
+            "smart-parking": {
+              title: "Smart Parking System",
+              desc: `A Raspberry Pi-based smart parking prototype utilizing computer vision. This intelligent system detects vehicle occupancy in real-time, processes visual data directly at the edge, and updates database tables to guide drivers to open spaces. It represents a robust integration of IoT hardware, cameras, and backend processing.`
+            },
+            "ami-catering": {
+              title: "Website AMI Catering",
+              desc: `A custom web application built to streamline operations for AMI Catering. Features end-to-end booking capabilities, detailed menu management, order tracking, and administrative control panel. Built with responsive layout, premium typography, and optimized database queries.`
+            },
+            "rc-car": {
+              title: "Robotic RC Car",
+              desc: `A hardware-based robotic vehicle control project. Features dual-motor control, wireless ESP32 communication, and real-time obstacle avoidance. The project demonstrates precise low-level C/C++ hardware coding and sensor integration.`
+            },
+            "census-app": {
+              title: "Population Census App",
+              desc: `A comprehensive data entry and analysis software built to support local community data aggregation. Enables census coordinators to securely log household details, generate real-time demographic statistics, and produce PDF report summaries.`
+            },
+            "raspi-5": {
+              title: "Raspberry Pi 5 Projects",
+              desc: `A collection of embedded system laboratory tasks demonstrating OS installation, VNC remote access, GPIO control with LEDs & buttons, alarm/siren systems, PIR motion detection, temperature logging, webcam streaming, and local web servers.`
+            }
+          },
+          id: {
+            "magenta-intern": {
+              title: "PT Magenta Indopack Sejahtera",
+              desc: `Bertanggung jawab untuk merancang dan mengembangkan aplikasi Enterprise Resource Planning (ERP) end-to-end untuk mendukung operasional perusahaan, serta mengintegrasikan sistem dengan Accurate guna mengoptimalkan manajemen data keuangan internal.<br><br><strong>Tanggung Jawab Utama:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Merancang dan mengembangkan fitur end-to-end untuk aplikasi web ERP perusahaan.</li><li>Mengintegrasikan komponen sistem dengan Accurate untuk memastikan sinkronisasi dan optimalisasi data keuangan yang mulus.</li><li>Membangun dan mendokumentasikan RESTful API menggunakan L5-Swagger UI untuk memfasilitasi komunikasi yang jelas dan terstandarisasi serta pengujian integrasi bagi tim pengembang.</li></ul>`
+            },
+            "tech-coordinator": {
+              title: "Radio Swara Mahasiswa Sanata Dharma",
+              desc: `Bertanggung jawab untuk mengawasi operasional pemeliharaan perangkat keras, mengelola peralatan teknis dan inventaris, serta mengoordinasikan komunikasi tim untuk memastikan dukungan teknis yang efisien dan andal.<br><br><strong>Tanggung Jawab Utama:</strong><ul class='list-disc pl-5 mt-2 flex flex-col gap-1'><li>Mengelola pemeliharaan perangkat keras dan aktivitas pemecahan masalah.</li><li>Mengawasi manajemen peralatan, inventaris, dan kesiapan operasional.</li><li>Mengoordinasikan komunikasi tim untuk memastikan alur kerja yang efisien dan penyelesaian tugas.</li></ul>`
+            },
+            "smart-parking": {
+              title: "Smart Parking System",
+              desc: `Prototipe parkir pintar berbasis Raspberry Pi menggunakan computer vision. Sistem cerdas ini mendeteksi okupansi kendaraan secara real-time, memproses data visual langsung pada perangkat edge, dan memperbarui tabel basis data untuk memandu pengemudi ke tempat parkir yang kosong. Proyek ini merepresentasikan integrasi kuat antara perangkat keras IoT, kamera, dan pemrosesan backend.`
+            },
+            "ami-catering": {
+              title: "Website AMI Catering",
+              desc: `Aplikasi web kustom yang dibangun untuk merampingkan operasional AMI Catering. Fitur mencakup kemampuan pemesanan end-to-end, manajemen menu terperinci, pelacakan pesanan, dan panel kontrol administratif. Dibangun dengan tata letak responsif, tipografi premium, dan kueri basis data yang dioptimalkan.`
+            },
+            "rc-car": {
+              title: "Robotic RC Car",
+              desc: `Proyek kontrol kendaraan robotik berbasis perangkat keras. Menampilkan kontrol motor ganda, komunikasi ESP32 nirkabel, dan penghindaran rintangan secara real-time. Proyek ini mendemonstrasikan pengodean perangkat keras tingkat rendah C/C++ dan integrasi sensor yang presisi.`
+            },
+            "census-app": {
+              title: "Population Census App",
+              desc: `Perangkat lunak entri data dan analisis komprehensif yang dibangun untuk mendukung agregasi data komunitas lokal. Memungkinkan koordinator sensus untuk mencatat rincian rumah tangga secara aman, menghasilkan statistik demografi real-time, dan membuat laporan PDF ringkasan.`
+            },
+            "raspi-5": {
+              title: "Raspberry Pi 5 Projects",
+              desc: `Kumpulan tugas laboratorium sistem tertanam yang mendemonstrasikan instalasi OS, akses jarak jauh VNC, kontrol GPIO dengan LED & tombol, sistem alarm/sirine, deteksi gerakan PIR, pencatatan suhu, streaming webcam, dan server web lokal.`
+            }
+          }
+        };
+
+        let currentLang = localStorage.getItem('portfolio-lang') || 'en';
+
+        function changeLanguage(lang) {
+          currentLang = lang;
+          document.querySelectorAll('[data-translate-key]').forEach(el => {
+            const key = el.getAttribute('data-translate-key');
+            if (translations[lang] && translations[lang][key]) {
+              el.innerHTML = translations[lang][key];
+            }
+          });
+        }
+
+        function updateLanguageUI() {
+          const langText = document.getElementById('lang-text');
+          if (langText) {
+            langText.textContent = currentLang === 'en' ? 'ID' : 'EN';
+          }
+          changeLanguage(currentLang);
+        }
+
+        // Initialize translation switcher
+        const switcherBtn = document.getElementById('lang-switcher-btn');
+        if (switcherBtn) {
+          switcherBtn.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'id' : 'en';
+            localStorage.setItem('portfolio-lang', currentLang);
+            updateLanguageUI();
+          });
+        }
+        updateLanguageUI();
+
         // Raspberry Pi 5 projects list
         const raspberryPi5List = [
           { text: 'Embedded System Raspi 5: Aplikasi Sederhana Raspberry dengan LED / Aplikasi LED dan Button', ytLink: 'https://youtu.be/V6_cC-yPX9M' },
@@ -1060,11 +1347,20 @@ void main() {
           const listContainer = document.getElementById('project-modal-list-container');
           const listEl = document.getElementById('project-modal-list');
 
-          titleEl.textContent = title;
-          descEl.innerHTML = desc;
+          let finalTitle = title;
+          let finalDesc = desc;
+          if (projectTranslations[currentLang] && projectTranslations[currentLang][title]) {
+            finalTitle = projectTranslations[currentLang][title].title;
+            finalDesc = projectTranslations[currentLang][title].desc;
+          }
 
-          if (badgeText) {
-            badgeEl.textContent = badgeText;
+          titleEl.textContent = finalTitle;
+          descEl.innerHTML = finalDesc;
+
+          let finalBadgeText = badgeText;
+
+          if (finalBadgeText) {
+            badgeEl.textContent = finalBadgeText;
             badgeEl.classList.remove('hidden');
           } else {
             badgeEl.classList.add('hidden');
