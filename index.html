@@ -442,68 +442,106 @@ void main() {
           <span class="material-symbols-outlined text-3xl">chevron_right</span>
         </button>
         <div id="tech-stack-scroll" class="flex overflow-x-auto hide-scrollbar gap-8 pt-4 pb-8 px-4 -mx-4 snap-x">
-          <!-- Card 1 -->
-          <div
-            class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
-            <div
-              class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+
+          <!-- Card 1: Machine Learning / AI (Primary skill) -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+              <span class="material-symbols-outlined text-2xl">psychology</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary" data-translate-key="tech-card1-title">Machine Learning / AI</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card1-desc">Machine Learning, Deep Learning, Computer Vision, NLP, LLM,<br>Feature Engineering, Model Evaluation, Data Analysis,<br>Performance Analysis, Real-Time Processing</p>
+          </div>
+
+          <!-- Card 2: Model Architectures -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
+              <span class="material-symbols-outlined text-2xl">hub</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary" data-translate-key="tech-card2-title">Model Architectures</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card2-desc">Transformer, CNN, LSTM,<br>Feedforward Neural Network (MLP)</p>
+          </div>
+
+          <!-- Card 3: Libraries & Frameworks -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
+              <span class="material-symbols-outlined text-2xl">library_books</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase" data-translate-key="tech-card3-title">Libraries &amp; Frameworks</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card3-desc">PyTorch, Scikit-learn, NumPy, OpenCV,<br>Pillow (PIL), Matplotlib, Streamlit</p>
+          </div>
+
+          <!-- Card 4: Programming Languages -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
               <span class="material-symbols-outlined text-2xl">code</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary"
-              data-translate-key="tech-card1-title">LanguageS</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card1-desc">
-              Python, JavaScript, PHP, Java, C++.</p>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary" data-translate-key="tech-card4-title">Programming Languages</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card4-desc">Python, Java, C++,<br>JavaScript, PHP</p>
           </div>
-          <!-- Card 2 -->
-          <div
-            class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
-            <div
-              class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
+
+          <!-- Card 5: Backend & API -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
+              <span class="material-symbols-outlined text-2xl">api</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary" data-translate-key="tech-card5-title">Backend &amp; API</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card5-desc">REST API (design &amp; integration),<br>Laravel, L5-Swagger (API Documentation)</p>
+          </div>
+
+          <!-- Card 6: Database -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
+              <span class="material-symbols-outlined text-2xl">database</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase" data-translate-key="tech-card6-title">Database</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card6-desc">PostgreSQL, MySQL</p>
+          </div>
+
+          <!-- Card 7: Data Engineering -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+              <span class="material-symbols-outlined text-2xl">schema</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary" data-translate-key="tech-card7-title">Data Engineering</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card7-desc">Basic Data Engineering,<br>Data Streaming / Pipelines</p>
+          </div>
+
+          <!-- Card 8: Infrastructure -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.error),0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-error text-on-error flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-error-container)] group-hover:-translate-y-1 transition-transform">
+              <span class="material-symbols-outlined text-2xl">terminal</span>
+            </div>
+            <h3 class="font-headline-sm text-headline-sm text-error mb-4 uppercase" data-translate-key="tech-card8-title">Infrastructure</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card8-desc">Linux (Arch Linux), Git &amp; GitHub,<br>Basic Server Administration</p>
+          </div>
+
+          <!-- Card 9: Embedded & IoT -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.primary),0_0_0_1px_theme(colors.primary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-primary text-on-primary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-primary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-primary">
               <span class="material-symbols-outlined text-2xl">precision_manufacturing</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary"
-              data-translate-key="tech-card2-title">Embedded &amp; Hardware</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card2-desc">
-              Arduino Uno, ESP32, Raspberry Pi,<br>Sensor &amp; Actuator Integration, Wiring &amp;
-              Soldering,<br>Hardware Debugging.</p>
+            <h3 class="font-headline-sm text-headline-sm text-primary mb-4 uppercase neon-text-primary" data-translate-key="tech-card9-title">Embedded &amp; IoT</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card9-desc">IoT, Embedded Systems,<br>Arduino Uno, ESP32, Raspberry Pi</p>
           </div>
-          <!-- Card 3 -->
-          <div
-            class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
-            <div
-              class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
-              <span class="material-symbols-outlined text-2xl">developer_mode</span>
-            </div>
-            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase"
-              data-translate-key="tech-card3-title">Web &amp; Backend</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card3-desc">
-              Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.</p>
-          </div>
-          <!-- Card 4 -->
-          <div
-            class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.error),0_0_0_1px_theme(colors.error),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
-            <div
-              class="w-12 h-12 bg-error text-on-error flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-error-container)] group-hover:-translate-y-1 transition-transform">
+
+          <!-- Card 10: Tools -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.tertiary),0_0_0_1px_theme(colors.tertiary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-tertiary text-on-tertiary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] group-hover:-translate-y-1 transition-transform">
               <span class="material-symbols-outlined text-2xl">build</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-error mb-4 uppercase"
-              data-translate-key="tech-card4-title">Tools</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card4-desc">
-              VS code, NetBeans, Intelij IDE, PyCharm, Unity, Aseprite, Obsidian, Trello, Draw.io, Figma, Microsoft
-              Excel, Accurate ERP Integration, SAP (ERP Concepts).</p>
+            <h3 class="font-headline-sm text-headline-sm text-tertiary mb-4 uppercase" data-translate-key="tech-card10-title">Tools</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card10-desc">VS Code, PyCharm, IntelliJ IDEA,<br>Figma, Draw.io, Microsoft Excel,<br>SAP (ERP Concepts), Accurate ERP Integration</p>
           </div>
-          <!-- Card 5 -->
-          <div
-            class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
-            <div
-              class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
-              <span class="material-symbols-outlined text-2xl">public</span>
+
+          <!-- Card 11: Professional Skills -->
+          <div class="min-w-[320px] md:min-w-[400px] shrink-0 snap-center bg-surface-container p-8 relative group shadow-[0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] hover:shadow-[0_0_15px_theme(colors.secondary),0_0_0_1px_theme(colors.secondary),0_0_0_4px_theme(colors.surface-container-highest)] transition-all duration-300">
+            <div class="w-12 h-12 bg-secondary text-on-secondary flex items-center justify-center mb-6 shadow-[0_4px_0_theme(colors.on-secondary-fixed)] group-hover:-translate-y-1 transition-transform neon-border-secondary">
+              <span class="material-symbols-outlined text-2xl">groups</span>
             </div>
-            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary"
-              data-translate-key="tech-card5-title">Domain Interests</h3>
-            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card5-desc">
-              Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.</p>
+            <h3 class="font-headline-sm text-headline-sm text-secondary mb-4 uppercase neon-text-secondary" data-translate-key="tech-card11-title">Professional Skills</h3>
+            <p class="font-body-md text-body-md text-on-surface-variant mb-6" data-translate-key="tech-card11-desc">Research, Problem Solving, Teamwork,<br>Communication, Bug Fixes,<br>Software Design Document (SDD)</p>
           </div>
+
         </div>
       </section>
 
@@ -590,6 +628,29 @@ void main() {
           <span class="font-label-md text-label-md text-primary animate-pulse neon-text-primary">SELECT GAME _</span>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+          <!-- Cabinet 1 - Gesture Recognition Research -->
+          <div
+            class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-between shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
+            <div
+              class="w-full bg-secondary text-on-secondary font-headline-sm text-xs sm:text-sm md:text-base leading-tight text-center py-2.5 px-3 uppercase mb-4 shadow-[0_0_15px_theme(colors.secondary)] z-10 neon-border-secondary min-h-[4.5rem] flex items-center justify-center">
+              Comparative Performance Analysis of CNN+LSTM and TimeSformer for Real-Time Hand Gesture Recognition
+            </div>
+            <div
+              class="relative w-[90%] aspect-video bg-white mb-4 shadow-[inset_0_0_15px_theme(colors.secondary)] overflow-hidden border border-secondary/50 rounded flex items-center justify-center p-1">
+              <img src="./assets/images/tabel performance.png" alt="Performance Table"
+                class="w-full h-full object-contain" />
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant text-center w-[90%] mb-6"
+              data-translate-key="proj-gesture-summary">Comparative evaluation of CNN+LSTM vs TimeSformer for real-time
+              gesture recognition.</p>
+            <button
+              onclick="openProjectModal('gesture-recognition', ['./assets/images/tabel performance.png'], null, null, null, null, 'Research Project', 'https://drive.google.com/file/d/11rA_e9P8LbSN8eNSwRMcw-L7w-YMfkeX/view?usp=sharing')"
+              class="marquee-btn inline-flex items-center justify-center w-48 h-12 bg-secondary text-on-secondary font-headline-sm text-headline-sm shadow-[0_6px_0_theme(colors.on-secondary-fixed)] hover:translate-y-1 hover:shadow-[0_2px_0_theme(colors.on-secondary-fixed)] transition-all"
+              data-translate-key="btn-proj-gesture">
+              VIEW PROJECT
+            </button>
+          </div>
+
           <!-- Cabinet 1 -->
           <div
             class="bg-surface-container-highest p-4 pb-8 flex flex-col items-center justify-center shadow-[0_0_0_4px_theme(colors.outline-variant),inset_0_0_20px_rgba(0,0,0,0.8)] relative group overflow-hidden border border-outline-variant">
@@ -856,6 +917,29 @@ void main() {
                 VIEW CERTIFICATE
               </button>
             </div>
+
+            <!-- Achievement 5 -->
+            <div
+              class="bg-surface-container-high p-6 border-2 border-tertiary/50 shadow-[0_0_15px_theme(colors.tertiary)] rounded-xl relative group hover:scale-[1.02] transition-transform flex flex-col justify-between items-start gap-4">
+              <div class="flex items-start gap-4 w-full">
+                <div
+                  class="w-16 h-20 bg-tertiary/20 flex items-center justify-center border border-tertiary rounded shadow-[inset_0_0_10px_theme(colors.tertiary)] shrink-0">
+                  <span class="material-symbols-outlined text-tertiary text-3xl">token</span>
+                </div>
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-tertiary uppercase mb-1"
+                    data-translate-key="ach-card5-role">A Deep Understanding of Deep Learning (with Python intro)</h3>
+                  <p class="font-label-md text-label-md text-on-surface-variant uppercase">Udemy</p>
+                  <p class="font-body-md text-body-md text-secondary mt-2">2026</p>
+                </div>
+              </div>
+              <button
+                onclick="openCertificate('Certificate of Completion - A deep understanding of deep learning (with Python intro)', './assets/images/setif udemy.jpg')"
+                class="marquee-btn px-6 py-2 bg-tertiary text-on-tertiary font-label-md text-label-md uppercase tracking-wider shadow-[0_4px_0_theme(colors.on-tertiary-fixed)] hover:translate-y-[2px] hover:shadow-[0_2px_0_theme(colors.on-tertiary-fixed)] transition-all"
+                data-translate-key="btn-ach5">
+                VIEW CERTIFICATE
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -955,9 +1039,10 @@ void main() {
   <div id="project-modal"
     class="fixed inset-0 z-[10000] flex items-center justify-center bg-background/80 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300">
     <div
-      class="relative bg-surface-container border-4 border-on-secondary-fixed-variant shadow-[0_0_50px_theme(colors.secondary)] p-6 max-w-[90vw] md:max-w-[800px] w-full max-h-[95vh] flex flex-col gap-6 overflow-y-auto">
-      <!-- Modal Header -->
-      <div class="w-full flex justify-between items-center border-b-2 border-outline-variant pb-2">
+      class="relative bg-surface-container border-4 border-on-secondary-fixed-variant shadow-[0_0_50px_theme(colors.secondary)] max-w-[95vw] md:max-w-[960px] w-full max-h-[95vh] flex flex-col overflow-hidden">
+
+      <!-- Modal Header (full width, fixed) -->
+      <div class="w-full flex justify-between items-center border-b-2 border-outline-variant px-6 py-4 shrink-0">
         <div class="flex flex-col md:flex-row md:items-center gap-2">
           <span id="project-modal-title"
             class="font-headline-sm text-headline-sm text-secondary uppercase tracking-wider neon-text-secondary">Project
@@ -970,93 +1055,109 @@ void main() {
         </button>
       </div>
 
-      <!-- Project Images Carousel / Slideshow -->
-      <div
-        class="relative w-full h-[400px] md:h-[600px] bg-black border-2 border-outline-variant p-1 shadow-[inset_0_0_20px_rgba(0,0,0,0.9)] overflow-hidden group">
-        <div id="project-modal-slides" class="w-full h-full flex transition-transform duration-500">
-          <!-- Slide items injected here -->
-        </div>
-        <!-- Navigation Buttons -->
-        <button id="project-modal-prev"
-          class="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/70 hover:bg-secondary hover:text-on-secondary border border-secondary/50 text-secondary flex items-center justify-center rounded-full transition-all opacity-0 group-hover:opacity-100">
-          <span class="material-symbols-outlined text-2xl">chevron_left</span>
-        </button>
-        <button id="project-modal-next"
-          class="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/70 hover:bg-secondary hover:text-on-secondary border border-secondary/50 text-secondary flex items-center justify-center rounded-full transition-all opacity-0 group-hover:opacity-100">
-          <span class="material-symbols-outlined text-2xl">chevron_right</span>
-        </button>
-        <!-- Slide Indicators -->
-        <div id="project-modal-indicators" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
-          <!-- Dot indicators injected here -->
-        </div>
-      </div>
+      <!-- Modal Body: 2-column layout (image left | content right) -->
+      <div class="flex flex-col md:flex-row flex-1 overflow-hidden">
 
-      <!-- Description -->
-      <div class="flex flex-col gap-2">
+        <!-- LEFT: Image Carousel (fixed, sticky) -->
         <div
-          class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
-          Mission briefing</div>
-        <p id="project-modal-desc" class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
-          Project description...
-        </p>
-      </div>
-
-      <!-- Extra List Container -->
-      <div id="project-modal-list-container" class="hidden flex flex-col gap-2">
-        <div
-          class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
-          Modules Details</div>
-        <div id="project-modal-list"
-          class="flex flex-col gap-2 max-h-[250px] overflow-y-auto pr-2 border border-outline-variant p-2 bg-black/40">
-          <!-- Dynamically injected rows -->
-        </div>
-      </div>
-
-      <!-- Links -->
-      <div class="flex flex-col gap-3">
-        <div
-          class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
-          External Channels</div>
-        <div class="flex flex-wrap gap-4">
-          <!-- YouTube Button -->
-          <a id="project-modal-yt" href="#" target="_blank"
-            class="flex items-center gap-2 px-4 py-2 bg-[#ff0000]/25 hover:bg-[#ff0000]/40 border border-[#ff0000] text-[#ffb4ab] font-label-md rounded transition-all">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-              <path
-                d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
-            </svg>
-            <span data-translate-key="modal-btn-yt">WATCH ON YOUTUBE</span>
-          </a>
-          <!-- GitHub Button -->
-          <a id="project-modal-github" href="#" target="_blank"
-            class="flex items-center gap-2 px-4 py-2 bg-[#24292e]/50 hover:bg-[#24292e]/80 border border-[#8a7a5f] text-on-surface font-label-md rounded transition-all">
-            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-              <path
-                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
-            </svg>
-            <span data-translate-key="modal-btn-github">VIEW CODEBASE</span>
-          </a>
-          <!-- Private Codebase Label -->
-          <div id="project-modal-private-label"
-            class="hidden items-center gap-2 px-4 py-2 bg-error/25 border border-error text-on-surface font-label-md text-label-md rounded">
-            <span class="material-symbols-outlined text-error text-[18px]">lock</span>
-            <span class="text-error uppercase" data-translate-key="modal-btn-private">Private Codebase (Confidentiality
-              Agreement)</span>
+          class="relative md:w-[45%] shrink-0 bg-black border-b-2 md:border-b-0 md:border-r-2 border-outline-variant shadow-[inset_0_0_20px_rgba(0,0,0,0.9)] overflow-hidden group h-[220px] md:h-auto">
+          <div id="project-modal-slides" class="w-full h-full flex transition-transform duration-500">
+            <!-- Slide items injected here -->
+          </div>
+          <!-- Navigation Buttons -->
+          <button id="project-modal-prev"
+            class="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/70 hover:bg-secondary hover:text-on-secondary border border-secondary/50 text-secondary flex items-center justify-center rounded-full transition-all opacity-0 group-hover:opacity-100">
+            <span class="material-symbols-outlined text-xl">chevron_left</span>
+          </button>
+          <button id="project-modal-next"
+            class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-black/70 hover:bg-secondary hover:text-on-secondary border border-secondary/50 text-secondary flex items-center justify-center rounded-full transition-all opacity-0 group-hover:opacity-100">
+            <span class="material-symbols-outlined text-xl">chevron_right</span>
+          </button>
+          <!-- Slide Indicators -->
+          <div id="project-modal-indicators" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+            <!-- Dot indicators injected here -->
           </div>
         </div>
-      </div>
 
-      <!-- Close Button -->
-      <div class="flex flex-col items-center gap-2 mt-4">
-        <button id="project-modal-close-btn"
-          class="marquee-btn px-8 py-3 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container hover:bg-error-container transition-all active:translate-y-[2px] active:border-b-0"
-          data-translate-key="modal-btn-close">
-          DISMISS MISSION [ESC]
-        </button>
-        <span class="font-label-md text-[12px] text-on-surface-variant animate-pulse"
-          data-translate-key="modal-footer">PRESS BUTTON OR OUTSIDE TO CLOSE</span>
-      </div>
-      <script>
+        <!-- RIGHT: Scrollable content -->
+        <div class="flex flex-col gap-5 overflow-y-auto p-6 flex-1">
+
+          <!-- Description -->
+          <div class="flex flex-col gap-2">
+            <div
+              class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
+              Mission briefing</div>
+            <p id="project-modal-desc" class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              Project description...
+            </p>
+          </div>
+
+          <!-- Extra List Container -->
+          <div id="project-modal-list-container" class="hidden flex flex-col gap-2">
+            <div
+              class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
+              Modules Details</div>
+            <div id="project-modal-list"
+              class="flex flex-col gap-2 max-h-[200px] overflow-y-auto pr-2 border border-outline-variant p-2 bg-black/40">
+              <!-- Dynamically injected rows -->
+            </div>
+          </div>
+
+          <!-- Links / External Channels -->
+          <div class="flex flex-col gap-3">
+            <div
+              class="font-label-md text-label-md text-on-surface uppercase tracking-widest border-b border-outline-variant pb-1">
+              External Channels</div>
+            <div class="flex flex-wrap gap-3">
+              <!-- YouTube Button -->
+              <a id="project-modal-yt" href="#" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-[#ff0000]/25 hover:bg-[#ff0000]/40 border border-[#ff0000] text-[#ffb4ab] font-label-md rounded transition-all">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.11C19.518 3.545 12 3.545 12 3.545s-7.518 0-9.388.507a3.003 3.003 0 0 0-2.11 2.11C0 8.033 0 12 0 12s0 3.967.502 5.837a3.003 3.003 0 0 0 2.11 2.11c1.87.508 9.388.508 9.388.508s7.518 0 9.388-.508a3.003 3.003 0 0 0 2.11-2.11C24 15.967 24 12 24 12s0-3.967-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                </svg>
+                <span data-translate-key="modal-btn-yt">WATCH ON YOUTUBE</span>
+              </a>
+              <!-- GitHub Button -->
+              <a id="project-modal-github" href="#" target="_blank"
+                class="flex items-center gap-2 px-4 py-2 bg-[#24292e]/50 hover:bg-[#24292e]/80 border border-[#8a7a5f] text-on-surface font-label-md rounded transition-all">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                </svg>
+                <span data-translate-key="modal-btn-github">VIEW CODEBASE</span>
+              </a>
+              <!-- Private Codebase Label -->
+              <div id="project-modal-private-label"
+                class="hidden items-center gap-2 px-4 py-2 bg-error/25 border border-error text-on-surface font-label-md text-label-md rounded">
+                <span class="material-symbols-outlined text-error text-[18px]">lock</span>
+                <span class="text-error uppercase" data-translate-key="modal-btn-private">Private Codebase (Confidentiality Agreement)</span>
+              </div>
+              <!-- Research Paper / Doc Button -->
+              <a id="project-modal-doc" href="#" target="_blank"
+                class="hidden items-center gap-2 px-4 py-2 bg-secondary/20 hover:bg-secondary/40 border border-secondary text-secondary font-label-md rounded transition-all">
+                <span class="material-symbols-outlined text-[18px]">description</span>
+                <span>VIEW RESEARCH PAPER (GOOGLE DRIVE)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Close Button -->
+          <div class="flex flex-col items-center gap-2 mt-auto pt-4">
+            <button id="project-modal-close-btn"
+              class="marquee-btn px-8 py-3 bg-error text-on-error font-label-md text-label-md uppercase tracking-widest shadow-[0_0_15px_theme(colors.error)] border-b-[4px] border-on-error-container hover:bg-error-container transition-all active:translate-y-[2px] active:border-b-0"
+              data-translate-key="modal-btn-close">
+              DISMISS MISSION [ESC]
+            </button>
+            <span class="font-label-md text-[12px] text-on-surface-variant animate-pulse"
+              data-translate-key="modal-footer">PRESS BUTTON OR OUTSIDE TO CLOSE</span>
+          </div>
+
+        </div><!-- end right scrollable -->
+      </div><!-- end modal body -->
+    </div>
+  </div>
+  <script>
         // Multi-language Translation Dictionaries
         const translations = {
           en: {
@@ -1070,16 +1171,28 @@ void main() {
             "hero-intro": "Hi! I'm Brian Willyandri Siregar, an Informatics graduate from Sanata Dharma University with a passion for Machine Learning, software development, and quality assurance. My technical background spans training data-driven models, building backend systems in Laravel, and bridging software with hardware such as developing a Raspberry Pi-based smart parking system. Recently, I've been channeling my software engineering foundation into indie game development, building my own projects to master game mechanics and systems design from the inside out. Hands-on experience debugging across web, embedded, and game development has given me a sharp eye for spotting bugs, edge cases, and mechanical inconsistencies. Detail-oriented and disciplined in documentation, I am eager to apply my technical background to help ensure every build meets high-quality standards before reaching players.",
             "hero-status": "Need Dopamine",
             "title-tech": "Tech Inventory",
-            "tech-card1-title": "Languages",
-            "tech-card1-desc": "Python, JavaScript, PHP, Java, C++.",
-            "tech-card2-title": "Embedded & Hardware",
-            "tech-card2-desc": "Arduino Uno, ESP32, Raspberry Pi,<br>Sensor &amp; Actuator Integration, Wiring &amp; Soldering,<br>Hardware Debugging.",
-            "tech-card3-title": "Web & Backend",
-            "tech-card3-desc": "Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.",
-            "tech-card4-title": "Tools & Workflow",
-            "tech-card4-desc": "VS code, NetBeans, Intelij IDE, PyCharm,<br> Unity, Aseprite,Obsidian, Trello, Draw.io, Figma,<br> Microsoft Excel, Accurate ERP Integration, SAP.",
-            "tech-card5-title": "Domain Interests",
-            "tech-card5-desc": "Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.",
+            "tech-card1-title": "Machine Learning / AI",
+            "tech-card1-desc": "Machine Learning, Deep Learning, Computer Vision, NLP, LLM,<br>Feature Engineering, Model Evaluation, Data Analysis,<br>Performance Analysis, Real-Time Processing",
+            "tech-card2-title": "Model Architectures",
+            "tech-card2-desc": "Transformer, CNN, LSTM,<br>Feedforward Neural Network (MLP)",
+            "tech-card3-title": "Libraries &amp; Frameworks",
+            "tech-card3-desc": "PyTorch, Scikit-learn, NumPy, OpenCV,<br>Pillow (PIL), Matplotlib, Streamlit",
+            "tech-card4-title": "Programming Languages",
+            "tech-card4-desc": "Python, Java, C++,<br>JavaScript, PHP",
+            "tech-card5-title": "Backend &amp; API",
+            "tech-card5-desc": "REST API (design &amp; integration),<br>Laravel, L5-Swagger (API Documentation)",
+            "tech-card6-title": "Database",
+            "tech-card6-desc": "PostgreSQL, MySQL",
+            "tech-card7-title": "Data Engineering",
+            "tech-card7-desc": "Basic Data Engineering,<br>Data Streaming / Pipelines",
+            "tech-card8-title": "Infrastructure",
+            "tech-card8-desc": "Linux (Arch Linux), Git &amp; GitHub,<br>Basic Server Administration",
+            "tech-card9-title": "Embedded &amp; IoT",
+            "tech-card9-desc": "IoT, Embedded Systems,<br>Arduino Uno, ESP32, Raspberry Pi",
+            "tech-card10-title": "Tools",
+            "tech-card10-desc": "VS Code, PyCharm, IntelliJ IDEA,<br>Figma, Draw.io, Microsoft Excel,<br>SAP (ERP Concepts), Accurate ERP Integration",
+            "tech-card11-title": "Professional Skills",
+            "tech-card11-desc": "Research, Problem Solving, Teamwork,<br>Communication, Bug Fixes,<br>Software Design Document (SDD)",
             "title-exp": "Experience",
             "exp-card1-role": "Full Stack Developer Intern",
             "exp-card1-summary": "Designed and developed an end-to-end ERP application to support company operations, integrated Accurate, and built APIs with L5-Swagger.",
@@ -1107,6 +1220,8 @@ void main() {
             "btn-ach3": "VIEW CERTIFICATE",
             "ach-card4-role": "ERP Fundamentals",
             "btn-ach4": "VIEW CERTIFICATE",
+            "ach-card5-role": "A Deep Understanding of Deep Learning (with Python intro)",
+            "btn-ach5": "VIEW CERTIFICATE",
             "foot-headline": "INSERT DOPAMINE TO START",
             "foot-status": "PLAYER 1: CONNECTED",
             "foot-sys": "SYSTEM STABLE",
@@ -1128,16 +1243,28 @@ void main() {
             "hero-intro": "Halo! Saya Brian Willyandri Siregar, lulusan Informatika dari Universitas Sanata Dharma dengan minat mendalam pada Machine Learning dan sistem cerdas.<br><br>Selama masa studi dan berbagai proyek, saya telah membangun fondasi yang kuat dalam rekayasa perangkat lunak, menggabungkan pengembangan web Laravel dengan integrasi perangkat keras-perangkat lunak secara langsung seperti merancang prototipe sistem parkir pintar berbasis Raspberry Pi. Baik itu melatih model berbasis data, merancang basis data, maupun membangun solusi backend, saya sangat senang menghubungkan perangkat lunak dengan dunia fisik.<br><br>Saya selalu antusias untuk belajar, beradaptasi dengan teknologi baru, dan membangun alat yang berdampak nyata dalam memecahkan masalah kehidupan sehari-hari.",
             "hero-status": "Need Dopamine",
             "title-tech": "Tech Inventory",
-            "tech-card1-title": "Languages",
-            "tech-card1-desc": "C/C++, Java, Python.",
-            "tech-card2-title": "Embedded & Hardware",
-            "tech-card2-desc": "Arduino Uno, ESP32, Raspberry Pi,<br>Integrasi Sensor &amp; Aktuator, Pengabelan &amp; Penyolderan,<br>Debugging Perangkat Keras.",
-            "tech-card3-title": "Web & Backend",
-            "tech-card3-desc": "Laravel, MVC Architecture,<br>RESTful API (L5-Swagger), MySQL.",
-            "tech-card4-title": "Tools & Workflow",
-            "tech-card4-desc": "Git &amp; GitHub, Figma, Microsoft Excel.",
-            "tech-card5-title": "Domain Interests",
-            "tech-card5-desc": "Machine Learning, Computer Vision, IoT,<br>ERP Systems, Data Engineering.",
+            "tech-card1-title": "Machine Learning / AI",
+            "tech-card1-desc": "Machine Learning, Deep Learning, Computer Vision, NLP, LLM,<br>Feature Engineering, Evaluasi Model, Analisis Data,<br>Analisis Performa, Real-Time Processing",
+            "tech-card2-title": "Arsitektur Model",
+            "tech-card2-desc": "Transformer, CNN, LSTM,<br>Feedforward Neural Network (MLP)",
+            "tech-card3-title": "Library &amp; Framework",
+            "tech-card3-desc": "PyTorch, Scikit-learn, NumPy, OpenCV,<br>Pillow (PIL), Matplotlib, Streamlit",
+            "tech-card4-title": "Bahasa Pemrograman",
+            "tech-card4-desc": "Python, Java, C++,<br>JavaScript, PHP",
+            "tech-card5-title": "Backend &amp; API",
+            "tech-card5-desc": "REST API (desain &amp; integrasi),<br>Laravel, L5-Swagger (Dokumentasi API)",
+            "tech-card6-title": "Database",
+            "tech-card6-desc": "PostgreSQL, MySQL",
+            "tech-card7-title": "Data Engineering",
+            "tech-card7-desc": "Dasar Data Engineering,<br>Data Streaming / Pipeline",
+            "tech-card8-title": "Infrastruktur",
+            "tech-card8-desc": "Linux (Arch Linux), Git &amp; GitHub,<br>Administrasi Server Dasar",
+            "tech-card9-title": "Embedded &amp; IoT",
+            "tech-card9-desc": "IoT, Sistem Tertanam,<br>Arduino Uno, ESP32, Raspberry Pi",
+            "tech-card10-title": "Tools",
+            "tech-card10-desc": "VS Code, PyCharm, IntelliJ IDEA,<br>Figma, Draw.io, Microsoft Excel,<br>SAP (Konsep ERP), Accurate ERP Integration",
+            "tech-card11-title": "Soft Skills",
+            "tech-card11-desc": "Riset, Problem Solving, Kerja Tim,<br>Komunikasi, Bug Fixes,<br>Software Design Document (SDD)",
             "title-exp": "Experience",
             "exp-card1-role": "Full Stack Developer Intern",
             "exp-card1-summary": "Merancang dan membangun aplikasi ERP end-to-end untuk mendukung operasional perusahaan, mengintegrasikan sistem dengan Accurate, serta membuat API L5-Swagger.",
@@ -1165,6 +1292,8 @@ void main() {
             "btn-ach3": "VIEW CERTIFICATE",
             "ach-card4-role": "ERP Fundamentals",
             "btn-ach4": "VIEW CERTIFICATE",
+            "ach-card5-role": "A Deep Understanding of Deep Learning (with Python intro)",
+            "btn-ach5": "VIEW CERTIFICATE",
             "foot-headline": "INSERT DOPAMINE TO START",
             "foot-status": "PLAYER 1: CONNECTED",
             "foot-sys": "SYSTEM STABLE",
@@ -1206,6 +1335,10 @@ void main() {
             "raspi-5": {
               title: "Raspberry Pi 5 Projects",
               desc: `A collection of embedded system laboratory tasks demonstrating OS installation, VNC remote access, GPIO control with LEDs & buttons, alarm/siren systems, PIR motion detection, temperature logging, webcam streaming, and local web servers.`
+            },
+            "gesture-recognition": {
+              title: "Comparative Performance Analysis of CNN+LSTM and TimeSformer for Real-Time Hand Gesture Recognition",
+              desc: `This study evaluates the CNN+LSTM and TimeSformer architectures through 48 grid search experiments on the 20BN-Jester dataset. The evaluation results show that CNN+LSTM (EXP31) excels with an accuracy of 95.76% and a low latency of 14.72 ms, whereas TimeSformer (EXP43) achieves an accuracy of 95.44% but records a latency of 217.35 ms, which exceeds the real-time threshold. Therefore, CNN+LSTM is established as the optimal architecture because it satisfies all viability criteria while remaining efficient for consumer-grade hardware. These findings provide empirical evidence regarding the trade-off between recurrence-based and attention-based approaches for gesture recognition.`
             }
           },
           id: {
@@ -1236,6 +1369,10 @@ void main() {
             "raspi-5": {
               title: "Raspberry Pi 5 Projects",
               desc: `Kumpulan tugas laboratorium sistem tertanam yang mendemonstrasikan instalasi OS, akses jarak jauh VNC, kontrol GPIO dengan LED & tombol, sistem alarm/sirine, deteksi gerakan PIR, pencatatan suhu, streaming webcam, dan server web lokal.`
+            },
+            "gesture-recognition": {
+              title: "Analisis Perbandingan Kinerja CNN+LSTM dan TimeSformer untuk Pengenalan Gestur Tangan Real-Time",
+              desc: `Penelitian ini mengevaluasi arsitektur CNN+LSTM dan TimeSformer melalui 48 eksperimen grid search pada dataset 20BN-Jester. Hasil evaluasi menunjukkan bahwa CNN+LSTM (EXP31) unggul dengan akurasi 95,76% dan latensi rendah 14,72 ms, sedangkan TimeSformer (EXP43) mencapai akurasi 95,44% namun mencatat latensi 217,35 ms yang melampaui ambang batas real-time. Oleh karena itu, CNN+LSTM ditetapkan sebagai arsitektur optimal karena memenuhi semua kriteria kelayakan sekaligus efisien untuk perangkat keras konsumen. Temuan ini memberikan bukti empiris mengenai trade-off antara pendekatan berbasis rekurensi dan berbasis atensi untuk pengenalan gestur.`
             }
           }
         };
@@ -1335,7 +1472,7 @@ void main() {
         let currentSlide = 0;
         let modalSlidesData = [];
 
-        function openProjectModal(title, images, desc, ytUrl, githubUrl, extraList = null, badgeText = null) {
+        function openProjectModal(title, images, desc, ytUrl, githubUrl, extraList = null, badgeText = null, docUrl = null) {
           const modal = document.getElementById('project-modal');
           const titleEl = document.getElementById('project-modal-title');
           const descEl = document.getElementById('project-modal-desc');
@@ -1346,6 +1483,7 @@ void main() {
           const badgeEl = document.getElementById('project-modal-badge');
           const listContainer = document.getElementById('project-modal-list-container');
           const listEl = document.getElementById('project-modal-list');
+          const docEl = document.getElementById('project-modal-doc');
 
           let finalTitle = title;
           let finalDesc = desc;
@@ -1391,6 +1529,14 @@ void main() {
             } else {
               githubEl.style.display = 'none';
             }
+          }
+
+          // Doc / Research Paper button
+          if (docUrl) {
+            docEl.href = docUrl;
+            docEl.style.display = 'flex';
+          } else {
+            docEl.style.display = 'none';
           }
 
           if (extraList && extraList.length > 0) {
